@@ -5,6 +5,7 @@ import { SEOHead } from '../seo/SEOHead';
 import { StickyPlanButton } from '../components/StickyPlanButton';
 import { FROM_CITIES, getCityBySlug } from '../data/fromCities';
 import { generateFAQSchema } from '../seo/schemas';
+import { absoluteUrl, routePathForCity } from '../seo/site';
 
 interface FromCityPageProps {
   slug?: string;
@@ -69,34 +70,35 @@ export const FromCityPage: React.FC<FromCityPageProps> = ({ slug, onNavigate }) 
   }
 
   const faqSchema = generateFAQSchema(city.faqs);
-  const canonical = `https://kainchidhambooking.com/from/${city.slug}`;
+  const path = routePathForCity(city.slug);
+  const canonical = absoluteUrl(path);
 
   return (
     <div className="pt-24 pb-24 px-4 md:px-8 max-w-5xl mx-auto">
       <SEOHead
-        title={`Kainchi Dham from ${city.name}: Distance, Trains, Flights & Taxi`}
+        title={`${city.name} to Kainchi Dham: Distance, Trains, Flights & Taxi`}
         description={`How to reach Kainchi Dham from ${city.name} — ${city.distanceKm} km, ${city.driveTime}. ${city.bestMode}.`}
         canonicalUrl={canonical}
-        keywords={[`Kainchi Dham from ${city.name}`, `Kainchi Dham ${city.name} train`, `${city.name} to Kathgodam`]}
+        keywords={[`${city.name} to Kainchi Dham`, `Kainchi Dham from ${city.name}`, `${city.name} to Kathgodam`]}
         ogType="article"
         breadcrumbs={[
           { name: 'Home', url: '/' },
-          { name: 'From your city', url: '/from' },
-          { name: city.name, url: `/from/${city.slug}` },
+          { name: 'How to reach', url: '/kainchi-dham-how-to-reach' },
+          { name: `${city.name} to Kainchi Dham`, url: path },
         ]}
         schema={faqSchema}
       />
       <Breadcrumbs
         items={[
           { name: 'Home', url: '/' },
-          { name: 'From your city', url: '/from' },
-          { name: city.name, url: `/from/${city.slug}` },
+          { name: 'How to reach', url: '/kainchi-dham-how-to-reach' },
+          { name: city.name, url: path },
         ]}
         onNavigate={onNavigate}
       />
 
       <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-700 mb-2">{city.region}</p>
-      <h1 className="text-3xl md:text-5xl font-serif font-bold text-forest-900 mb-4">Kainchi Dham from {city.name}</h1>
+      <h1 className="text-3xl md:text-5xl font-serif font-bold text-forest-900 mb-4">{city.name} to Kainchi Dham</h1>
       <p className="text-lg text-charcoal-700 mb-8 max-w-3xl">
         {city.distanceKm} km · {city.driveTime}. Best usual plan: {city.bestMode}.
       </p>

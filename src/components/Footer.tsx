@@ -195,8 +195,23 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </a>
               </li>
               <li>
-                <a href="/about" onClick={(e) => handleLinkClick(e, '/about')} className="hover:text-gold-300 transition-colors">
-                  Editorial Verification & Sources
+                <a href="/sitemap.xml" className="hover:text-gold-300 transition-colors">
+                  XML sitemap
+                </a>
+              </li>
+              <li>
+                <a href="/privacy-policy" onClick={(e) => handleLinkClick(e, '/privacy-policy')} className="hover:text-gold-300 transition-colors">
+                  Privacy policy
+                </a>
+              </li>
+              <li>
+                <a href="/editorial-policy" onClick={(e) => handleLinkClick(e, '/editorial-policy')} className="hover:text-gold-300 transition-colors">
+                  Editorial policy
+                </a>
+              </li>
+              <li>
+                <a href="/partners" onClick={(e) => handleLinkClick(e, '/partners')} className="hover:text-gold-300 transition-colors">
+                  List your hotel or taxi
                 </a>
               </li>
               <li>

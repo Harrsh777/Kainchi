@@ -12,6 +12,7 @@ export interface SEOProps {
   author?: string;
   breadcrumbs?: { name: string; url: string }[];
   schema?: Record<string, any> | Record<string, any>[];
+  noindex?: boolean;
 }
 
 export const SEOHead: React.FC<SEOProps> = ({
@@ -26,29 +27,30 @@ export const SEOHead: React.FC<SEOProps> = ({
   author = 'Kainchi Dham Editorial Board',
   breadcrumbs,
   schema,
+  noindex = false,
 }) => {
   useEffect(() => {
-    // 1. Update Title
     document.title = title;
 
-    // 2. Update Meta Description
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta');
-      metaDesc.setAttribute('name', 'description');
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.setAttribute('content', description);
-
-    // 3. Update Meta Keywords
-    if (keywords && keywords.length > 0) {
-      let metaKw = document.querySelector('meta[name="keywords"]');
-      if (!metaKw) {
-        metaKw = document.createElement('meta');
-        metaKw.setAttribute('name', 'keywords');
-        document.head.appendChild(metaKw);
+    const setMeta = (attr: string, key: string, content: string) => {
+      let el = document.querySelector(`meta[${attr}="${key}"]`);
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
       }
-      metaKw.setAttribute('content', keywords.join(', '));
+      el.setAttribute('content', content);
+    };
+
+    setMeta('name', 'description', description);
+    setMeta('name', 'robots', noindex ? 'noindex, nofollow' : 'index, follow');
+    setMeta('name', 'twitter:card', 'summary_large_image');
+    setMeta('name', 'twitter:title', title);
+    setMeta('name', 'twitter:description', description);
+    setMeta('name', 'twitter:image', ogImage);
+
+    if (keywords && keywords.length > 0) {
+      setMeta('name', 'keywords', keywords.join(', '));
     }
 
     // 4. Update Canonical Link
@@ -94,12 +96,7 @@ export const SEOHead: React.FC<SEOProps> = ({
       '@type': 'WebSite',
       name: 'Kainchi Dham Booking',
       url: 'https://kainchidhambooking.com',
-      description: 'Independent travel resource and booking platform for Kainchi Dham, Uttarakhand.',
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: 'https://kainchidhambooking.com/?q={search_term_string}',
-        'query-input': 'required name=search_term_string',
-      },
+      description: 'Independent travel resource and booking platform for Kainchi Dham, Uttarakhand. Not affiliated with Kainchi Dham Ashram.',
     });
 
     // BreadcrumbList Schema
@@ -136,7 +133,7 @@ export const SEOHead: React.FC<SEOProps> = ({
       const s = document.getElementById('json-ld-structured-data');
       if (s) s.remove();
     };
-  }, [title, description, canonicalUrl, keywords, ogType, ogImage, publishedTime, modifiedTime, author, breadcrumbs, schema]);
+  }, [title, description, canonicalUrl, keywords, ogType, ogImage, publishedTime, modifiedTime, author, breadcrumbs, schema, noindex]);
 
   return null;
 };

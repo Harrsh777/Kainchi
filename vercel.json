@@ -1,0 +1,10 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/sitemaps/:file", "destination": "/sitemaps/:file" },
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/((?!assets/).*)", "destination": "/index.html" }
+  ]
+}

@@ -7,13 +7,14 @@ import { SEO_ROUTES } from '../seo/seoData';
 import { generateHotelSchema, generateFAQSchema } from '../seo/schemas';
 import { STAYS_DATA } from '../data/stays';
 import type { Stay } from '../types';
+import { stayPath } from '../seo/site';
 
 interface HotelsHubPageProps {
   onNavigate: (url: string) => void;
   onSelectStay: (stay: Stay) => void;
 }
 
-export const HotelsHubPage: React.FC<HotelsHubPageProps> = ({ onNavigate, onSelectStay }) => {
+export const HotelsHubPage: React.FC<HotelsHubPageProps> = ({ onNavigate }) => {
   const meta = SEO_ROUTES['/hotels'];
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedLocation, setSelectedLocation] = useState<string>('All');
@@ -36,7 +37,7 @@ export const HotelsHubPage: React.FC<HotelsHubPageProps> = ({ onNavigate, onSele
       image: s.images[0],
       rating: s.rating,
       reviewCount: s.reviewsCount,
-      url: `/hotels/${s.id}`,
+      url: stayPath(s.id),
     })
   );
 
@@ -47,7 +48,7 @@ export const HotelsHubPage: React.FC<HotelsHubPageProps> = ({ onNavigate, onSele
       <SEOHead
         title={meta.title}
         description={meta.description}
-        canonicalUrl={meta.canonicalUrl}
+        canonicalUrl="https://kainchidhambooking.com/kainchi-dham-hotels"
         keywords={meta.secondaryKeywords}
         ogType="website"
         breadcrumbs={meta.breadcrumbs}
@@ -177,13 +178,17 @@ export const HotelsHubPage: React.FC<HotelsHubPageProps> = ({ onNavigate, onSele
                 </p>
               </div>
 
-              <button
-                onClick={() => onSelectStay(stay)}
+              <a
+                href={stayPath(stay.id)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate(stayPath(stay.id));
+                }}
                 className="px-4 py-2.5 rounded-xl bg-forest-900 hover:bg-forest-800 text-gold-400 font-bold text-xs transition-all shadow-sm flex items-center gap-1.5 group-hover:bg-gold-500 group-hover:text-forest-950"
               >
-                <span>View Rooms</span>
+                <span>View stay</span>
                 <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+              </a>
             </div>
           </div>
         ))}

@@ -29,9 +29,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath = '/', onNavigate, o
     { name: 'Kainchi Dham', url: '/kainchi-dham', anchor: '#visit-info' },
     { name: 'Today', url: '/today' },
     { name: 'Map', url: '/map' },
-    { name: 'Hotels & Stays', url: '/hotels', anchor: '#stays' },
-    { name: 'Cars & Cabs', url: '/taxi', anchor: '#transportation' },
-    { name: 'From cities', url: '/from' },
+    { name: 'Hotels & Stays', url: '/kainchi-dham-hotels', anchor: '#stays' },
+    { name: 'Cars & Cabs', url: '/kainchi-dham-taxi', anchor: '#transportation' },
+    { name: 'Routes', url: '/kainchi-dham-how-to-reach' },
   ];
 
   const handleLinkClick = (e: React.MouseEvent, link: typeof navLinks[0]) => {
@@ -89,7 +89,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath = '/', onNavigate, o
           {navLinks.map((link) => {
             const isActive =
               currentPath === link.url ||
-              (link.url === '/from' && currentPath.startsWith('/from'));
+              (link.url === '/kainchi-dham-hotels' && currentPath.startsWith('/stays/')) ||
+              (link.url === '/kainchi-dham-how-to-reach' && currentPath.endsWith('-to-kainchi-dham'));
             return (
               <a
                 key={link.name}
