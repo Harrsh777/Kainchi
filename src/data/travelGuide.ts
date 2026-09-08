@@ -1,4 +1,5 @@
 import type { GuideArticle } from '../types';
+import { SITE_IMAGES } from './siteImages';
 
 export const TRAVEL_GUIDE_DATA: GuideArticle[] = [
   {
@@ -7,7 +8,7 @@ export const TRAVEL_GUIDE_DATA: GuideArticle[] = [
     category: 'Logistics',
     readTime: '4 min read',
     summary: 'A detailed breakdown of rail, flight, and road options from Delhi, Lucknow, and all major Indian hubs to Kainchi Dham.',
-    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200&auto=format&fit=crop',
+    image: SITE_IMAGES.templeComplex,
     sections: [
       {
         heading: 'By Train (Most Recommended)',
@@ -29,7 +30,7 @@ export const TRAVEL_GUIDE_DATA: GuideArticle[] = [
     category: 'Planning',
     readTime: '3 min read',
     summary: 'Understanding seasonal weather variations, pilgrimage crowd peaks, and tranquil shoulder months in Kumaon.',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop',
+    image: SITE_IMAGES.earlyMorning,
     sections: [
       {
         heading: 'Spring & Summer (March to June)',
@@ -51,7 +52,7 @@ export const TRAVEL_GUIDE_DATA: GuideArticle[] = [
     category: 'Darshan Guide',
     readTime: '3 min read',
     summary: 'Essential visitor guidelines, photography rules, dress code, and prayer timings at Kainchi Dham Ashram.',
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop',
+    image: SITE_IMAGES.riverTemple,
     sections: [
       {
         heading: 'Daily Timings',
@@ -77,7 +78,7 @@ export const TRAVEL_GUIDE_DATA: GuideArticle[] = [
     category: 'Accommodation',
     readTime: '4 min read',
     summary: 'Comparing stay locations based on walking proximity, mountain views, peacefulness, and family amenities.',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop',
+    image: SITE_IMAGES.courtyardAerial,
     sections: [
       {
         heading: 'Near Ashram (Kainchi / Niglat)',

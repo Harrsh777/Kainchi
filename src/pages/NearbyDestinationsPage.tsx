@@ -6,6 +6,7 @@ import { SEOHead } from '../seo/SEOHead';
 import { SEO_ROUTES } from '../seo/seoData';
 import { generateArticleSchema, generateFAQSchema } from '../seo/schemas';
 import { EXPERIENCES_DATA } from '../data/experiences';
+import { SITE_IMAGES } from '../data/siteImages';
 import type { Experience } from '../types';
 
 interface NearbyDestinationsPageProps {
@@ -46,7 +47,7 @@ export const NearbyDestinationsPage: React.FC<NearbyDestinationsPageProps> = ({ 
       name: 'Golu Devta Temple (Ghorakhal)',
       distance: '11 km (25 mins)',
       description: 'The legendary temple dedicated to the Lord of Justice, filled with thousands of brass bells and written petitions by devotees seeking truth.',
-      image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop',
+      image: SITE_IMAGES.templeComplex,
       highlights: ['Thousands of Sacred Bells', 'Unique Written Petitions', 'Pine Valley Atmosphere', 'Spiritual Alignment']
     },
     {

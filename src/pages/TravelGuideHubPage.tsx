@@ -5,6 +5,7 @@ import { SEOInternalLinks } from '../components/SEOInternalLinks';
 import { SEOHead } from '../seo/SEOHead';
 import { SEO_ROUTES } from '../seo/seoData';
 import { generateArticleSchema, generateFAQSchema } from '../seo/schemas';
+import { SITE_IMAGES } from '../data/siteImages';
 
 interface TravelGuideHubPageProps {
   onNavigate: (url: string) => void;
@@ -174,6 +175,13 @@ export const TravelGuideHubPage: React.FC<TravelGuideHubPageProps> = ({ onNaviga
           Comprehensive step-by-step route breakdowns from major Indian metropolises and transit hubs to Kainchi Dham Temple. 
           Verified train numbers, flight connectivity, recommended road pitstops, and hill driving safety tips.
         </p>
+        <div className="mt-6 rounded-3xl overflow-hidden border border-forest-900/10 aspect-[21/9] max-h-[280px]">
+          <img
+            src={SITE_IMAGES.templeComplex}
+            alt="Kainchi Dham ashram in the Kumaon hills — the destination at the end of these routes"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </header>
 
       {/* Origin City Switcher Tabs */}

@@ -16,6 +16,7 @@ import { TRANSPORT_DATA } from '../data/transportation';
 import { FAQS_DATA } from '../data/faqs';
 import { GALLERY_DATA } from '../data/testimonials';
 import { FROM_CITIES } from '../data/fromCities';
+import { SITE_IMAGES, DEFAULT_OG_IMAGE } from '../data/siteImages';
 import { fetchKainchiWeather, type KainchiWeather } from '../services/weatherService';
 import type { Stay } from '../types';
 
@@ -64,8 +65,7 @@ export const KainchiDhamPillarPage: React.FC<KainchiDhamPillarPageProps> = ({
     headline: 'The Complete Kainchi Dham Guide',
     description: meta.description,
     url: meta.canonicalUrl,
-    image:
-      'https://media.licdn.com/dms/image/v2/D4D12AQF7u-NP-zFThg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1677346062854?e=2147483647&v=beta&t=yZ-BsS-TJgaRrUUvFpnsYWDiExl9b6KXDsNRkMRG66I',
+    image: DEFAULT_OG_IMAGE,
     datePublished: meta.publishedTime,
     dateModified: meta.modifiedTime,
     authorName: meta.author,
@@ -87,6 +87,7 @@ export const KainchiDhamPillarPage: React.FC<KainchiDhamPillarPageProps> = ({
         canonicalUrl={meta.canonicalUrl}
         keywords={meta.secondaryKeywords}
         ogType="article"
+        ogImage={DEFAULT_OG_IMAGE}
         breadcrumbs={meta.breadcrumbs}
         schema={[articleSchema, faqSchema]}
       />
@@ -100,6 +101,15 @@ export const KainchiDhamPillarPage: React.FC<KainchiDhamPillarPageProps> = ({
         <p className="text-lg text-charcoal-700 max-w-3xl">
           Neem Karoli Baba’s ashram on NH-109 in Nainital district. Use the jump links, live weather, map pins and planner. Darshan is free; we only arrange travel.
         </p>
+        <div className="mt-6 rounded-3xl overflow-hidden border border-forest-900/10 shadow-sm aspect-[21/9] max-h-[320px]">
+          <img
+            src={SITE_IMAGES.riverTemple}
+            alt="Kainchi Dham ashram beside the rocky riverbed, saffron and white shikharas against forested hills"
+            className="w-full h-full object-cover object-[center_40%]"
+            width={1600}
+            height={686}
+          />
+        </div>
       </header>
 
       <nav className="sticky top-16 z-20 mb-10 -mx-4 px-4 py-3 bg-ivory-100/95 backdrop-blur-md border-y border-forest-900/10 overflow-x-auto">

@@ -1,4 +1,5 @@
 import type { TravelPackage } from '../types';
+import { SITE_IMAGES } from './siteImages';
 
 export const PACKAGES_DATA: TravelPackage[] = [
   {
@@ -8,7 +9,7 @@ export const PACKAGES_DATA: TravelPackage[] = [
     duration: '2 Nights / 3 Days',
     badge: 'Most Popular',
     pricePerPerson: 6999,
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop',
+    image: SITE_IMAGES.riverTemple,
     inclusions: [
       '2 Nights stay in premium forest-view retreat / boutique hotel',
       'Dedicated private sedan / SUV for entire 3-day duration',
@@ -42,7 +43,7 @@ export const PACKAGES_DATA: TravelPackage[] = [
     duration: '4 Nights / 5 Days',
     badge: 'Comprehensive Experience',
     pricePerPerson: 12499,
-    image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop',
+    image: SITE_IMAGES.earlyMorning,
     inclusions: [
       '4 Nights accommodation in boutique heritage retreats & luxury homestays',
       'Dedicated Innova Crysta / private SUV with mountain chauffeur',

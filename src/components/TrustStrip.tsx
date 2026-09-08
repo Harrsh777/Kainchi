@@ -1,27 +1,27 @@
 import React from 'react';
-import { Hotel, Car, Compass, HeartHandshake } from 'lucide-react';
+import { BookOpen, Clock, MapPin, CloudSun } from 'lucide-react';
 
 export const TrustStrip: React.FC = () => {
   const trustItems = [
     {
-      icon: Hotel,
-      title: 'Carefully selected stays',
-      subtitle: 'Verified clean retreats & homestays near ashram',
+      icon: BookOpen,
+      title: 'Independent visitor guide',
+      subtitle: 'Timings, etiquette, trains and routes — not ashram booking',
     },
     {
-      icon: Car,
-      title: 'Reliable local transport',
-      subtitle: 'Expert hill chauffeurs from Kathgodam & Pantnagar',
+      icon: Clock,
+      title: 'Darshan hours',
+      subtitle: 'Gates typically 6:30 AM–7:30 PM; aarti around morning & dusk',
     },
     {
-      icon: Compass,
-      title: 'Local travel assistance',
-      subtitle: 'Aarti schedules, weather advice & serene route maps',
+      icon: MapPin,
+      title: 'How to reach',
+      subtitle: 'Kathgodam 37 km via Bhowali · Pantnagar ~72 km',
     },
     {
-      icon: HeartHandshake,
-      title: 'Dedicated support',
-      subtitle: 'Thoughtful concierge care throughout your pilgrimage',
+      icon: CloudSun,
+      title: 'Conditions today',
+      subtitle: 'Live valley weather and a simple road note on /today',
     },
   ];
 
@@ -30,10 +30,10 @@ export const TrustStrip: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-forest-700">
-            THE KAINCHI DHAM PROMISE
+            START WITH THE PLACE
           </span>
           <h2 className="font-serif text-2xl sm:text-3xl text-charcoal-900 mt-1 font-normal">
-            Everything for your Kainchi Dham journey
+            What first-time visitors actually look up
           </h2>
         </div>
 

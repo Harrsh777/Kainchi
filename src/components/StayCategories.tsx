@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Building, Home, MountainSnow } from 'lucide-react';
+import { SITE_IMAGES } from '../data/siteImages';
 
 interface StayCategoriesProps {
   onSelectCategory: (category: 'Hotels' | 'Homestays' | 'Retreats') => void;
@@ -30,7 +31,7 @@ export const StayCategories: React.FC<StayCategoriesProps> = ({ onSelectCategory
       catKey: 'Retreats' as const,
       tagline: 'Slow down and reconnect with yourself',
       description: 'Silent pine sanctuaries with meditation decks, Ayurvedic wellness, and quiet spaces for reflection.',
-      image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1200&auto=format&fit=crop',
+      image: SITE_IMAGES.earlyMorning,
       icon: MountainSnow,
       cta: 'Explore Retreats'
     }

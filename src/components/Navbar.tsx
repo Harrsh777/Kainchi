@@ -81,6 +81,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath = '/', onNavigate, o
             >
               Kainchi Dham
             </div>
+            <div
+              className={`text-[10px] font-sans font-medium uppercase tracking-[0.18em] mt-0.5 ${
+                isDarkNav ? 'text-forest-700' : 'text-white/70'
+              }`}
+            >
+              Visitor guide
+            </div>
           </div>
         </a>
 

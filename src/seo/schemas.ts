@@ -6,7 +6,7 @@ export const generateOrganizationSchema = () => ({
   name: 'Kainchi Dham Booking',
   url: 'https://kainchidhambooking.com',
   logo: 'https://kainchidhambooking.com/logo.png',
-  description: 'Independent travel resource, hotel directory, and concierge booking service for Kainchi Dham and Kumaon pilgrimage.',
+  description: 'Independent visitor guide to Kainchi Dham (Neem Karoli Baba ashram) with timings, routes, and optional stays or cabs. Not the ashram trust.',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Bhowali-Nainital Road, Kainchi',

@@ -24,13 +24,13 @@ export const FeaturedStays: React.FC<FeaturedStaysProps> = ({ onSelectStay, onPl
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div className="max-w-2xl">
             <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-forest-700 block mb-2">
-              CURATED ACCOMMODATIONS
+              OPTIONAL STAYS NEAR THE ASHRAM
             </span>
             <h2 className="font-serif text-3xl sm:text-5xl font-light text-charcoal-900 tracking-tight">
-              Stay close to what matters.
+              Sleep nearby after darshan.
             </h2>
             <p className="text-charcoal-600 text-sm sm:text-base mt-3 leading-relaxed">
-              Carefully selected stays for a peaceful, comfortable, and contemplative visit to Kainchi Dham and surrounding Kumaon ridges.
+              Independent listings — not ashram rooms. Useful if you want to walk to morning aarti without a long hill drive.
             </p>
           </div>
 

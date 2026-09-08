@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Mountain, Sparkles } from 'lucide-react';
+import { SITE_IMAGES } from '../data/siteImages';
 
 interface KainchiStoryProps {
   onExploreExperience: () => void;
@@ -15,9 +16,9 @@ export const KainchiStory: React.FC<KainchiStoryProps> = ({ onExploreExperience 
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] group">
               <img
-                src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop"
-                alt="Kainchi Dham temple nestled in the Kumaon valley"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                src={SITE_IMAGES.templeComplex}
+                alt="Kainchi Dham ashram: white and saffron shikharas with terracotta roofs in a forested Kumaon valley"
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-forest-950/70 via-transparent to-transparent" />
               
@@ -72,7 +73,7 @@ export const KainchiStory: React.FC<KainchiStoryProps> = ({ onExploreExperience 
                 onClick={onExploreExperience}
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-forest-800 hover:bg-forest-700 text-ivory-100 text-xs font-semibold uppercase tracking-wider transition-all duration-300 shadow-sm group"
               >
-                <span>Explore Kainchi Dham</span>
+                <span>Explore the visitor guide</span>
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
 

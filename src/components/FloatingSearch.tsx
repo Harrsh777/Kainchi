@@ -48,6 +48,9 @@ export const FloatingSearch: React.FC<FloatingSearchProps> = ({ onSearch, onOpen
 
   return (
     <div className="relative z-30 -mt-10 sm:-mt-14 max-w-6xl mx-auto px-4 sm:px-6">
+      <p className="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-forest-800 mb-3">
+        Optional stays &amp; transfers
+      </p>
       {/* Desktop & Tablet Floating Search Bar */}
       <div className="hidden sm:block glass-card bg-white/95 rounded-2xl sm:rounded-3xl shadow-luxury p-3 sm:p-4 border border-ivory-300/80 backdrop-blur-xl">
         <form onSubmit={handleSearchClick} className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-3 items-center">

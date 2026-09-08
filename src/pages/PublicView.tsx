@@ -87,10 +87,15 @@ export const PublicView: React.FC<PublicViewProps> = (p) => {
           breadcrumbs={homeMeta.breadcrumbs}
           schema={homeFaqSchema ? [orgSchema, homeFaqSchema] : orgSchema}
         />
-        <Hero onExploreStays={() => p.scrollToSection('stays')} onPlanTrip={() => p.navigateTo('/trip-planner')} />
-        <FloatingSearch onSearch={p.onSearch} onOpenMobilePlanner={() => p.scrollToSection('plan-your-trip')} />
+        <Hero onReadGuide={() => p.navigateTo('/kainchi-dham')} onPlanTrip={() => p.navigateTo('/kainchi-dham-how-to-reach')} />
         <TrustStrip />
+        <KainchiStory onExploreExperience={() => p.navigateTo('/kainchi-dham')} />
         <NeemKaroliBaba onReadStories={() => p.navigateTo('/stories')} />
+        <TravelGuide />
+        <VisitInfo onOpenPlanner={() => p.navigateTo('/kainchi-dham-how-to-reach')} />
+        <PhotoGallery onOpenLightbox={p.onOpenLightbox} />
+        <Experiences onPlanExperience={p.onPlanExperience} />
+        <FloatingSearch onSearch={p.onSearch} onOpenMobilePlanner={() => p.scrollToSection('plan-your-trip')} />
         <FeaturedStays onSelectStay={p.onSelectStay} onPlanTrip={() => p.scrollToSection('plan-your-trip')} />
         <StayCategories onSelectCategory={p.onSelectCategory} />
         <Transportation onBookTransport={p.onBookTransport} />
@@ -99,16 +104,11 @@ export const PublicView: React.FC<PublicViewProps> = (p) => {
             p.addToast('Custom itinerary submitted', 'Our Kumaon desk will contact you on WhatsApp within 2 hours.', 'success');
           }}
         />
-        <KainchiStory onExploreExperience={() => p.scrollToSection('experiences')} />
         <LegacyStories onSelectStory={p.onSelectStory} />
         <PhilosophyQuote />
-        <Experiences onPlanExperience={p.onPlanExperience} />
-        <TravelGuide />
-        <VisitInfo onOpenPlanner={() => p.navigateTo('/trip-planner')} />
         <CompletePackage onSelectPackage={p.onSelectPackage} />
         <WhyUs />
         <Testimonials />
-        <PhotoGallery onOpenLightbox={p.onOpenLightbox} />
         <FAQSection onOpenContact={() => p.scrollToSection('contact')} />
         <ConciergeContact />
         <DomainForSale

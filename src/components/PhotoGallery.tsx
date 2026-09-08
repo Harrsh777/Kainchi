@@ -8,7 +8,7 @@ interface PhotoGalleryProps {
 }
 
 export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ onOpenLightbox }) => {
-  const [activeFilter, setActiveFilter] = useState<'All' | 'Temple' | 'Mountains' | 'Lakes' | 'Stays'>('All');
+  const [activeFilter, setActiveFilter] = useState<'All' | 'Temple' | 'Mountains'>('All');
 
   const filteredItems = activeFilter === 'All'
     ? GALLERY_DATA
@@ -22,19 +22,19 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ onOpenLightbox }) =>
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div className="max-w-2xl">
             <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-forest-700 block mb-2">
-              VISUAL SANCTUARY
+              THE ASHRAM IN PLACE
             </span>
             <h2 className="font-serif text-3xl sm:text-5xl font-light text-charcoal-900 tracking-tight">
-              Glimpses of Kumaon & Kainchi
+              Kainchi Dham as it actually looks
             </h2>
             <p className="text-charcoal-600 text-sm sm:text-base mt-3 leading-relaxed">
-              Experience the peaceful light, misty pine valleys, and sacred waters that welcome every visiting traveler.
+              Riverbed, red shikharas, and the forested scissors-bend of the Kumaon hills — the views visitors search for before they travel.
             </p>
           </div>
 
           {/* Filter Chips */}
           <div className="flex items-center gap-1.5 p-1.5 bg-ivory-200/80 rounded-full border border-ivory-300 w-fit">
-            {(['All', 'Temple', 'Mountains', 'Lakes', 'Stays'] as const).map((cat) => (
+            {(['All', 'Temple', 'Mountains'] as const).map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveFilter(cat)}

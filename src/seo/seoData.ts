@@ -21,11 +21,11 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
   // 1. Home / Pillar Root
   '/': {
     path: '/',
-    title: 'Kainchi Dham Booking: Trusted Temple Stays, Cabs & Travel Concierge',
-    description: 'The premier independent pilgrimage travel platform for Kainchi Dham. Reserve verified forest retreats, riverside homestays, and trusted mountain chauffeurs.',
+    title: 'Kainchi Dham: Ashram Guide, Timings, How to Reach & Kumaon Travel',
+    description: 'Independent guide to Kainchi Dham (Neem Karoli Baba ashram near Nainital): daily timings, Kathgodam route, weather, nearby lakes, and optional stays or cabs. Not the ashram trust.',
     primaryKeyword: 'Kainchi Dham',
-    secondaryKeywords: ['Kainchi Dham booking', 'Kainchi Dham hotels', 'Neem Karoli Baba ashram', 'Kainchi Dham taxi', 'Kainchi travel guide'],
-    searchIntent: 'TRANSACTIONAL',
+    secondaryKeywords: ['Kainchi Dham timings', 'how to reach Kainchi Dham', 'Neem Karoli Baba ashram', 'Kainchi Dham Nainital', 'Kainchi Dham travel guide'],
+    searchIntent: 'INFORMATIONAL',
     canonicalUrl: 'https://kainchidhambooking.com/',
     ogType: 'website',
     author: 'Kainchi Dham Editorial Team',

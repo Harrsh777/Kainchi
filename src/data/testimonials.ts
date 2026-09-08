@@ -1,4 +1,5 @@
 import type { Testimonial, GalleryItem } from '../types';
+import { SITE_IMAGES } from './siteImages';
 
 export const TESTIMONIALS_DATA: Testimonial[] = [
   {
@@ -57,44 +58,44 @@ export const GALLERY_DATA: GalleryItem[] = [
   },
   {
     id: 'g-1',
-    title: 'Kainchi Valley Morning Mist',
+    title: 'Ashram beside the Kshipra riverbed',
     category: 'Temple',
-    location: 'Kainchi Dham, Uttarakhand',
-    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop'
+    location: 'Kainchi Dham, Nainital district',
+    imageUrl: SITE_IMAGES.riverTemple
   },
   {
     id: 'g-2',
-    title: 'Sacred Temple Sanctum & Courtyard',
+    title: 'Temple complex in the scissors-bend valley',
     category: 'Temple',
-    location: 'Kainchi Dham Ashram Gates',
-    imageUrl: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop'
+    location: 'Neem Karoli Baba Ashram',
+    imageUrl: SITE_IMAGES.templeComplex
   },
   {
     id: 'g-3',
-    title: 'Himalayan Cedar Pine Forests',
-    category: 'Mountains',
-    location: 'Bhowali Heights',
-    imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop'
+    title: 'Early light on the ashram roofs',
+    category: 'Temple',
+    location: 'Kainchi Dham',
+    imageUrl: SITE_IMAGES.earlyMorning
   },
   {
     id: 'g-4',
-    title: 'Emerald Naini Lake Boat Reflection',
-    category: 'Lakes',
-    location: 'Nainital',
-    imageUrl: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1200&auto=format&fit=crop'
+    title: 'Courtyard and terracotta shikharas from above',
+    category: 'Temple',
+    location: 'Kainchi Dham ashram',
+    imageUrl: SITE_IMAGES.courtyardAerial
   },
   {
     id: 'g-5',
-    title: 'Tranquil Retreat Verandah',
-    category: 'Stays',
-    location: 'Kainchi Valley Retreat',
-    imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop'
+    title: 'River stones and forested Kumaon ridges',
+    category: 'Mountains',
+    location: 'Kshipra valley',
+    imageUrl: SITE_IMAGES.riverValleyThumb
   },
   {
     id: 'g-6',
-    title: 'Mukteshwar Snow Peaks Sunset',
-    category: 'Mountains',
-    location: 'Mukteshwar Dham',
-    imageUrl: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop'
+    title: 'Saffron shikhara against pine hills',
+    category: 'Temple',
+    location: 'Kainchi Dham',
+    imageUrl: SITE_IMAGES.riverTemple
   }
 ];

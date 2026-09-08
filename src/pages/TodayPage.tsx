@@ -5,6 +5,7 @@ import { SEOHead } from '../seo/SEOHead';
 import { StickyPlanButton } from '../components/StickyPlanButton';
 import { STAYS_DATA } from '../data/stays';
 import { fetchKainchiWeather, roadAdvisory, type KainchiWeather } from '../services/weatherService';
+import { SITE_IMAGES } from '../data/siteImages';
 import type { Stay } from '../types';
 
 interface TodayPageProps {
@@ -74,6 +75,13 @@ export const TodayPage: React.FC<TodayPageProps> = ({ onNavigate, onSelectStay }
           Weather from Open-Meteo for the ashram valley (29.42°N, 79.52°E)
           {weather ? ` · last pulled ${new Date(weather.fetchedAt).toLocaleTimeString('en-IN')}` : ''}
         </p>
+        <div className="mt-6 rounded-3xl overflow-hidden border border-forest-900/10 aspect-[21/9] max-h-[260px]">
+          <img
+            src={SITE_IMAGES.earlyMorning}
+            alt="Kainchi Dham ashram in morning light in the Kumaon valley"
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
       </header>
 
       {error && (

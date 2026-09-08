@@ -1,4 +1,5 @@
 import type { Experience } from '../types';
+import { SITE_IMAGES } from './siteImages';
 
 export const EXPERIENCES_DATA: Experience[] = [
   {
@@ -10,7 +11,7 @@ export const EXPERIENCES_DATA: Experience[] = [
     distanceFromKainchi: 'At Destination',
     description: 'Participate in the serene morning or evening Aarti in the main temple courtyard, experience the quiet vibration of the cave where Maharaj-ji meditated, and receive the blessed Hanuman Prasad.',
     highlights: ['Hanuman Chalisa recitation during Aarti', 'Visit Maharaj-ji’s original kutir and sanctum', 'Langar and sacred prasad distribution', 'Peaceful riverside meditation area'],
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop',
+    image: SITE_IMAGES.riverTemple,
     bestTime: 'Morning 6:30 AM - 11:30 AM or Evening 4:30 PM - 7:30 PM'
   },
   {
@@ -34,7 +35,7 @@ export const EXPERIENCES_DATA: Experience[] = [
     distanceFromKainchi: '22 km (45 min drive)',
     description: 'A less crowded, contemplative lake haven. Take a boat to the historic island aquarium or explore quiet pine forest trails around Naukuchiatal.',
     highlights: ['Picturesque central island in Bhimtal lake', 'Kayaking and paddle boating in clear waters', '17th-century Bhimeshwar Mahadev Temple', 'Pine-fringed walking trails'],
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop',
+    image: SITE_IMAGES.earlyMorning,
     bestTime: 'Morning or Sunset hours'
   },
   {

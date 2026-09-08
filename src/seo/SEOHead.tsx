@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { DEFAULT_OG_IMAGE } from '../data/siteImages';
 
 export interface SEOProps {
   title: string;
@@ -21,7 +22,7 @@ export const SEOHead: React.FC<SEOProps> = ({
   canonicalUrl,
   keywords,
   ogType = 'website',
-  ogImage = 'https://media.licdn.com/dms/image/v2/D4D12AQF7u-NP-zFThg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1677346062854?e=2147483647&v=beta&t=yZ-BsS-TJgaRrUUvFpnsYWDiExl9b6KXDsNRkMRG66I',
+  ogImage = DEFAULT_OG_IMAGE,
   publishedTime,
   modifiedTime = '2026-09-08',
   author = 'Kainchi Dham Editorial Board',
