@@ -21,6 +21,7 @@ import { PhotoGallery } from './components/PhotoGallery';
 import { FAQSection } from './components/FAQSection';
 import { ConciergeContact } from './components/ConciergeContact';
 import { Footer } from './components/Footer';
+import { DomainForSale } from './components/DomainForSale';
 
 // SEO Dedicated Pillar & Hub Pages
 import { KainchiDhamPillarPage } from './pages/KainchiDhamPillarPage';
@@ -69,6 +70,7 @@ export function App() {
 
   // Toast System
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
+  const [domainSaleOpen, setDomainSaleOpen] = useState(false);
 
   // Sync route on mount and hash/popstate changes
   useEffect(() => {
@@ -408,6 +410,12 @@ export function App() {
 
             {/* Dedicated Concierge & Local Office Contact */}
             <ConciergeContact />
+
+            <DomainForSale
+              open={domainSaleOpen}
+              onOpen={() => setDomainSaleOpen(true)}
+              onClose={() => setDomainSaleOpen(false)}
+            />
           </>
         )}
       </main>
