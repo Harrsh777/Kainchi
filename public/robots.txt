@@ -1,6 +1,21 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
 Disallow: /admin/
 Disallow: /api/
 Disallow: /dashboard/
@@ -11,3 +26,8 @@ Disallow: /checkout/
 Disallow: /search?
 
 Sitemap: https://kainchidhambooking.com/sitemap.xml
+Sitemap: https://kainchidhambooking.com/sitemaps/pages.xml
+Sitemap: https://kainchidhambooking.com/sitemaps/routes.xml
+Sitemap: https://kainchidhambooking.com/sitemaps/hotels.xml
+Sitemap: https://kainchidhambooking.com/sitemaps/destinations.xml
+

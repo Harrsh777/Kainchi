@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onReadGuide, onPlanTrip }) => {
           >
             Kainchi Dham
             <span className="block text-ivory-300 font-normal italic text-2xl sm:text-4xl lg:text-5xl mt-2 font-serif">
-              in the scissors-bend of the Kumaon hills.
+              Booking & Travel Guide 2026
             </span>
           </motion.h1>
 
@@ -60,7 +60,7 @@ export const Hero: React.FC<HeroProps> = ({ onReadGuide, onPlanTrip }) => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-base sm:text-lg lg:text-xl text-ivory-200/90 font-light leading-relaxed max-w-2xl mb-8 sm:mb-10"
           >
-            Timings, how to reach from Kathgodam, where the ashram sits on the river, nearby Nainital and Bhimtal, and what first-time visitors actually need — written as a guide, not a brochure. We are not the ashram trust.
+            Your trusted independent concierge to Neem Karoli Baba Ashram: daily temple darshan timings, Kathgodam & Delhi taxi booking, verified hotels near temple gate, and Kumaon travel itineraries.
           </motion.p>
 
           <motion.div

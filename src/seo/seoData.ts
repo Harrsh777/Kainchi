@@ -1,4 +1,5 @@
 // Central SEO Metadata and Keyword Mapping Dictionary for KainchiDhamBooking.com
+// Tuned for top-rankings on "Kainchi Dham", "kainchi dhaam booking", "kainchi dham travel", taxi & hotel booking
 
 export interface SEORouteMeta {
   path: string;
@@ -21,35 +22,37 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
   // 1. Home / Pillar Root
   '/': {
     path: '/',
-    title: 'Kainchi Dham: Ashram Guide, Timings, How to Reach & Kumaon Travel',
-    description: 'Independent guide to Kainchi Dham (Neem Karoli Baba ashram near Nainital): daily timings, Kathgodam route, weather, nearby lakes, and optional stays or cabs. Not the ashram trust.',
-    primaryKeyword: 'Kainchi Dham',
-    secondaryKeywords: ['Kainchi Dham timings', 'how to reach Kainchi Dham', 'Neem Karoli Baba ashram', 'Kainchi Dham Nainital', 'Kainchi Dham travel guide'],
+    title: 'Kainchi Dham Booking & Travel Guide 2026 — Ashram Timings, Stays & Taxis',
+    description: 'Complete independent guide for Kainchi Dham (Neem Karoli Baba Ashram near Nainital). Book verified hotels near temple, Kathgodam & Delhi taxi transfers, check daily darshan timings & Kumaon travel plans.',
+    primaryKeyword: 'Kainchi Dham booking',
+    secondaryKeywords: ['Kainchi Dham', 'kainchi dhaam booking', 'kainchi dham travel', 'Kainchi Dham taxi booking', 'Kainchi Dham hotel booking', 'Neem Karoli Baba ashram', 'Kainchi Dham timings'],
     searchIntent: 'INFORMATIONAL',
     canonicalUrl: 'https://kainchidhambooking.com/',
     ogType: 'website',
     author: 'Kainchi Dham Editorial Team',
     publishedTime: '2024-01-15',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [{ name: 'Home', url: '/' }],
     faqs: [
-      { question: 'What is Kainchi Dham and why is it famous?', answer: 'Kainchi Dham is a revered Himalayan ashram established in 1964 by the saint Neem Karoli Baba (Maharaj-ji), located in the Kumaon hills of Uttarakhand near Nainital and Bhowali.' },
-      { question: 'What are the daily temple visiting timings at Kainchi Dham?', answer: 'The ashram gates generally open around 6:30 AM for Morning Aarti and close after Evening Aarti around 7:30 PM (varies slightly by season).' },
+      { question: 'What is Kainchi Dham and why is it famous?', answer: 'Kainchi Dham is a sacred Himalayan ashram founded in 1964 by the saint Neem Karoli Baba (Maharaj-ji), located in the Kumaon hills of Uttarakhand near Nainital and Bhowali.' },
+      { question: 'How can I book taxi and hotels for Kainchi Dham?', answer: 'Through KainchiDhamBooking.com, you can reserve verified boutique hotels and homestays near the temple gate, and book fixed-price taxi pickups from Kathgodam Railway Station, Pantnagar Airport, and Delhi NCR.' },
+      { question: 'What are the daily temple visiting timings at Kainchi Dham?', answer: 'The ashram gates open around 6:30 AM for Morning Aarti and close after Evening Aarti around 7:30 PM daily. Temple darshan and prasad are completely free.' },
       { question: 'Can visitors stay inside the Kainchi Dham Ashram?', answer: 'Ashram accommodation requires prior written permission from the ashram trust. Most pilgrims stay in verified boutique hotels, guest lodges, and homestays in Kainchi Valley, Bhowali, or Bhimtal.' }
     ],
     relatedRoutes: [
       { label: 'Kainchi Dham Complete Guide', url: '/kainchi-dham', description: 'Map, trains, hotels, weather, FAQ' },
-      { label: 'Free Trip Planner', url: '/trip-planner', description: 'Generate a 2–5 day itinerary and request a quote' },
-      { label: 'Kainchi Dham Today', url: '/today', description: 'Live temperature and rain forecast' },
-      { label: 'From Delhi & other cities', url: '/from', description: 'Only the origins we can document properly' }
+      { label: 'Kainchi Dham Hotel Booking', url: '/kainchi-dham-hotels', description: 'Handpicked verified stays near temple' },
+      { label: 'Kainchi Dham Taxi Booking', url: '/kainchi-dham-taxi', description: 'Station pickups from Kathgodam (₹1,499) & Delhi' },
+      { label: 'How to Reach Travel Handbook', url: '/kainchi-dham-how-to-reach', description: 'Step-by-step route and train guide' },
+      { label: 'Free Trip Planner', url: '/trip-planner', description: 'Generate a 2–5 day itinerary and request a quote' }
     ]
   },
 
   // 2. Kainchi Dham Pillar Hub
   '/kainchi-dham': {
     path: '/kainchi-dham',
-    title: 'Kainchi Dham Temple & Ashram: Complete Visitor Guide, Timings & History',
-    description: 'Comprehensive independent guide to Kainchi Dham Ashram: daily aarti schedule, temple dress code, rules, best time to visit, weather by season, and distance from major hubs.',
+    title: 'Kainchi Dham Ashram & Temple: Complete Visitor Guide, Timings & History 2026',
+    description: 'Comprehensive independent guide to Kainchi Dham Temple: daily aarti schedule, temple dress code, rules, best time to visit, weather by season, and distance from Kathgodam, Nainital & Delhi.',
     primaryKeyword: 'Kainchi Dham Temple',
     secondaryKeywords: ['Kainchi Dham timings', 'Kainchi Dham history', 'Kainchi Dham rules', 'Kainchi Dham location', 'Kainchi Dham weather', 'Kainchi Dham aarti time'],
     searchIntent: 'INFORMATIONAL',
@@ -57,7 +60,7 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     ogType: 'article',
     author: 'Kainchi Dham Research Desk',
     publishedTime: '2024-02-01',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
       { name: 'Kainchi Dham Hub', url: '/kainchi-dham' }
@@ -68,10 +71,10 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
       { question: 'When is the annual Kainchi Dham Bhandara (June 15 Mela)?', answer: 'The annual Pratishtha Divas Bhandara is held every year on June 15, drawing hundreds of thousands of devotees worldwide.' }
     ],
     relatedRoutes: [
-      { label: 'Free Trip Planner', url: '/trip-planner', description: 'City, dates, budget → day-by-day plan + quote' },
-      { label: 'Kainchi Dham Today', url: '/today', description: 'Live weather, rain and road note' },
-      { label: 'Travel Map', url: '/map', description: 'Hotels, taxis, Kathgodam, lakes' },
-      { label: 'From your city', url: '/from', description: 'Delhi, Mumbai, Lucknow and 7 more origins' }
+      { label: 'Reserve Hotels Near Temple', url: '/kainchi-dham-hotels', description: 'Valley stays and pine view homestays' },
+      { label: 'Kathgodam Taxi Booking', url: '/kainchi-dham-taxi', description: 'Fixed-fare station transfers' },
+      { label: 'How to Reach Kainchi Dham', url: '/kainchi-dham-how-to-reach', description: 'Train, road, and flight guides' },
+      { label: 'Free Trip Planner', url: '/trip-planner', description: 'City, dates, budget → day-by-day plan + quote' }
     ]
   },
 
@@ -87,7 +90,7 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     ogType: 'article',
     author: 'Spiritual Heritage Archives',
     publishedTime: '2024-02-10',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
       { name: 'Neem Karoli Baba', url: '/neem-karoli-baba' }
@@ -100,26 +103,26 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     relatedRoutes: [
       { label: 'Documented Legacy Stories', url: '/stories', description: 'Steve Jobs, Ram Dass, Mark Zuckerberg and international seekers' },
       { label: 'Kainchi Dham Ashram Guide', url: '/kainchi-dham', description: 'The primary Himalayan ashram established by Maharaj-ji' },
-      { label: 'Curated Itineraries', url: '/itineraries', description: 'Plan 1, 2, or 3-day pilgrimage journeys' }
+      { label: 'Curated Itineraries', url: '/kainchi-dham-itinerary', description: 'Plan 1, 2, or 3-day pilgrimage journeys' }
     ]
   },
 
   // 4. Hotel SEO Cluster Hub
-  '/hotels': {
-    path: '/hotels',
-    title: 'Kainchi Dham Hotels & Stays: Verified Homestays, Forest Resorts & Tariffs',
-    description: 'Explore verified boutique hotels, riverside cottages, and family homestays near Kainchi Dham Temple. Transparent tariffs, distance from temple gate, verified amenities, and booking assistance.',
-    primaryKeyword: 'Kainchi Dham hotels',
-    secondaryKeywords: ['Hotels near Kainchi Dham', 'Kainchi Dham homestay', 'Kainchi Dham stay', 'Hotels in Bhowali', 'Hotels in Bhimtal', 'Budget hotels near Kainchi Dham'],
+  '/kainchi-dham-hotels': {
+    path: '/kainchi-dham-hotels',
+    title: 'Kainchi Dham Hotel Booking 2026: Verified Homestays, Forest Resorts & Tariffs',
+    description: 'Book verified hotels near Kainchi Dham Temple. Handpicked boutique stays, riverside cottages, and family homestays in Kainchi Valley, Bhowali & Bhimtal with transparent tariffs and satvik meals.',
+    primaryKeyword: 'Kainchi Dham hotel booking',
+    secondaryKeywords: ['Hotels near Kainchi Dham', 'Kainchi Dham homestay', 'Kainchi Dham stay', 'Hotels in Bhowali', 'Hotels in Bhimtal', 'Budget hotels near Kainchi Dham', 'kainchi dham booking'],
     searchIntent: 'COMMERCIAL',
-    canonicalUrl: 'https://kainchidhambooking.com/hotels',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-hotels',
     ogType: 'website',
-    author: 'Hospitality Concierge',
+    author: 'Hospitality Concierge Desk',
     publishedTime: '2024-02-15',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
-      { name: 'Stays & Hotels', url: '/hotels' }
+      { name: 'Hotels & Stays', url: '/kainchi-dham-hotels' }
     ],
     faqs: [
       { question: 'Where is the best area to stay when visiting Kainchi Dham?', answer: 'For closest proximity (0.5–2 km), stay in Kainchi Valley or Niglat. For superior dining and amenities (8–11 km), Bhowali and Bhimtal offer luxury pine resorts and lake view boutique hotels.' },
@@ -127,28 +130,28 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
       { question: 'Are pure vegetarian meals available at hotels near the temple?', answer: 'Yes, almost all partner stays near Kainchi Dham offer dedicated pure-vegetarian and satvik meal preparations upon request.' }
     ],
     relatedRoutes: [
-      { label: 'Cab Transfers & Cabs', url: '/taxi', description: 'Station pickups from Kathgodam directly to your hotel' },
+      { label: 'Cab Transfers & Cabs', url: '/kainchi-dham-taxi', description: 'Station pickups from Kathgodam directly to your hotel' },
       { label: 'Kainchi Dham Temple Guide', url: '/kainchi-dham', description: 'Darshan timings, morning aarti, and guidelines' },
       { label: 'Trip Budget Calculator', url: '/tools', description: 'Calculate hotel + travel costs for your party' }
     ]
   },
 
   // 5. Transportation Hub
-  '/taxi': {
-    path: '/taxi',
-    title: 'Kainchi Dham Taxi & Cab Booking: Kathgodam, Pantnagar & Delhi Transfers',
-    description: 'Book trusted mountain chauffeurs to Kainchi Dham with fixed, upfront pricing. Station transfers from Kathgodam (₹1,499), Pantnagar Airport (₹2,499), Delhi (₹6,499), and Nainital.',
-    primaryKeyword: 'Kainchi Dham taxi',
-    secondaryKeywords: ['Kainchi Dham cab', 'Kathgodam to Kainchi Dham taxi fare', 'Delhi to Kainchi Dham taxi', 'Pantnagar to Kainchi taxi', 'Innova Crysta Kainchi Dham'],
+  '/kainchi-dham-taxi': {
+    path: '/kainchi-dham-taxi',
+    title: 'Kainchi Dham Taxi & Cab Booking 2026: Kathgodam, Pantnagar & Delhi Transfers',
+    description: 'Book trusted mountain chauffeurs to Kainchi Dham with fixed upfront pricing. Station transfers from Kathgodam (₹1,499), Pantnagar Airport (₹2,499), Delhi NCR (₹6,499), and Nainital circuit.',
+    primaryKeyword: 'Kainchi Dham taxi booking',
+    secondaryKeywords: ['Kainchi Dham cab', 'Kathgodam to Kainchi Dham taxi fare', 'Delhi to Kainchi Dham taxi', 'Pantnagar to Kainchi taxi', 'Innova Crysta Kainchi Dham', 'kainchi dham travel'],
     searchIntent: 'TRANSACTIONAL',
-    canonicalUrl: 'https://kainchidhambooking.com/taxi',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-taxi',
     ogType: 'website',
     author: 'Transit Operations Desk',
     publishedTime: '2024-02-20',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
-      { name: 'Taxi & Transfers', url: '/taxi' }
+      { name: 'Taxi & Transfers', url: '/kainchi-dham-taxi' }
     ],
     faqs: [
       { question: 'How much is taxi fare from Kathgodam to Kainchi Dham?', answer: 'Fixed fares start at ₹1,499 for Sedans (Dzire/Etios), ₹2,199 for Ertiga SUV, and ₹2,999 for Toyota Innova Crysta, including toll and station parking.' },
@@ -156,28 +159,28 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
       { question: 'Do chauffeurs wait during darshan for return trips?', answer: 'Yes, full-day darshan and Kumaon circuit sightseeing packages include waiting time and flexible stops.' }
     ],
     relatedRoutes: [
-      { label: 'How to Reach Kainchi Dham', url: '/travel-guide', description: 'Complete road, train, and flight travel handbook' },
+      { label: 'How to Reach Kainchi Dham', url: '/kainchi-dham-how-to-reach', description: 'Complete road, train, and flight travel handbook' },
       { label: 'Nearby Destinations Guide', url: '/nearby', description: 'Explore Nainital, Bhimtal, and Mukteshwar circuits' },
       { label: 'Distance & Time Calculator', url: '/tools', description: 'Interactive driving distance and duration calculator' }
     ]
   },
 
   // 6. Travel Guide Hub
-  '/travel-guide': {
-    path: '/travel-guide',
-    title: 'How to Reach Kainchi Dham: Complete Travel Handbook (Train, Flight & Road)',
-    description: 'Detailed, step-by-step route guide to reaching Kainchi Dham from Delhi, Mumbai, Bangalore, Lucknow, and Kathgodam. Includes train schedules, flight options, highway tips, and pitstops.',
+  '/kainchi-dham-how-to-reach': {
+    path: '/kainchi-dham-how-to-reach',
+    title: 'How to Reach Kainchi Dham: Complete Travel Handbook (Train, Flight & Road) 2026',
+    description: 'Detailed route guide to reaching Kainchi Dham from Delhi, Mumbai, Bangalore, Lucknow, and Kathgodam. Includes Kathgodam Shatabdi train schedules, Pantnagar flight options, highway tips, and pitstops.',
     primaryKeyword: 'How to reach Kainchi Dham',
-    secondaryKeywords: ['Kainchi Dham from Delhi', 'Kainchi Dham from Kathgodam', 'Kainchi Dham nearest railway station', 'Kainchi Dham nearest airport', 'Delhi to Kainchi Dham distance'],
+    secondaryKeywords: ['Kainchi Dham travel', 'Kainchi Dham from Delhi', 'Kainchi Dham from Kathgodam', 'Kainchi Dham nearest railway station', 'Kainchi Dham nearest airport', 'Delhi to Kainchi Dham distance'],
     searchIntent: 'INFORMATIONAL',
-    canonicalUrl: 'https://kainchidhambooking.com/travel-guide',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-how-to-reach',
     ogType: 'article',
     author: 'Senior Himalayan Travel Editor',
     publishedTime: '2024-03-01',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
-      { name: 'Travel Guide', url: '/travel-guide' }
+      { name: 'How to Reach', url: '/kainchi-dham-how-to-reach' }
     ],
     faqs: [
       { question: 'What is the nearest railway station to Kainchi Dham?', answer: 'Kathgodam Railway Station (KGM) is the closest railhead, located approximately 37 km (1.25 hrs drive) from Kainchi Dham.' },
@@ -185,8 +188,8 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
       { question: 'What is the best road route from Delhi to Kainchi Dham?', answer: 'The optimal route is Delhi → Hapur Bypass → Moradabad Bypass → Rampur → Bilaspur → Rudrapur → Haldwani → Kathgodam → Bhowali → Kainchi Dham (~315 km, 6.5–7.5 hrs).' }
     ],
     relatedRoutes: [
-      { label: 'Station Taxi Booking', url: '/taxi', description: 'Book confirmed car pickup from Kathgodam Station' },
-      { label: 'Itineraries & Schedules', url: '/itineraries', description: 'Detailed 1, 2, and 3-day trip plans' },
+      { label: 'Station Taxi Booking', url: '/kainchi-dham-taxi', description: 'Book confirmed car pickup from Kathgodam Station' },
+      { label: 'Itineraries & Schedules', url: '/kainchi-dham-itinerary', description: 'Detailed 1, 2, and 3-day trip plans' },
       { label: 'Travel Distance Calculator', url: '/tools', description: 'Interactive route matrix and travel time calculator' }
     ]
   },
@@ -195,7 +198,7 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
   '/stories': {
     path: '/stories',
     title: 'Documented Stories & Legacy of Neem Karoli Baba | Steve Jobs, Ram Dass & More',
-    description: 'Carefully researched, factual accounts of global seekers who visited Kainchi Dham: Steve Jobs in 1974, Ram Dass (Richard Alpert), Mark Zuckerberg, Larry Brilliant, and Maharaj-ji\'s worldwide impact.',
+    description: 'Carefully researched factual accounts of global seekers who visited Kainchi Dham: Steve Jobs in 1974, Ram Dass (Richard Alpert), Mark Zuckerberg, Larry Brilliant, and Maharaj-ji\'s worldwide impact.',
     primaryKeyword: 'Neem Karoli Baba stories',
     secondaryKeywords: ['Steve Jobs Kainchi Dham', 'Ram Dass Neem Karoli Baba', 'Mark Zuckerberg Kainchi Dham', 'Larry Brilliant Maharajji', 'Be Here Now book'],
     searchIntent: 'INFORMATIONAL',
@@ -203,7 +206,7 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     ogType: 'article',
     author: 'Historical Research Group',
     publishedTime: '2024-03-10',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
       { name: 'Documented Stories', url: '/stories' }
@@ -216,26 +219,26 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     relatedRoutes: [
       { label: 'Neem Karoli Baba Biography', url: '/neem-karoli-baba', description: 'Comprehensive biographical archive and timeline' },
       { label: 'Kainchi Dham Temple Hub', url: '/kainchi-dham', description: 'Visiting hours, darshan rules, and ashram history' },
-      { label: 'Plan Your Pilgrimage', url: '/itineraries', description: 'Step-by-step travel schedules' }
+      { label: 'Plan Your Pilgrimage', url: '/kainchi-dham-itinerary', description: 'Step-by-step travel schedules' }
     ]
   },
 
   // 8. Itineraries Hub
-  '/itineraries': {
-    path: '/itineraries',
-    title: 'Kainchi Dham Itineraries: 1-Day, 2-Day & 3-Day Pilgrimage Travel Plans',
-    description: 'Expertly designed travel itineraries for Kainchi Dham. Includes realistic morning aarti schedules, transit timings from Kathgodam/Delhi, and combined Nainital & Bhimtal circuit plans.',
+  '/kainchi-dham-itinerary': {
+    path: '/kainchi-dham-itinerary',
+    title: 'Kainchi Dham Tour Packages & Travel Itineraries (1-Day, 2-Day & 3-Day Plans) 2026',
+    description: 'Expertly designed pilgrimage itineraries for Kainchi Dham. Includes realistic morning aarti schedules, transit timings from Kathgodam/Delhi, and combined Nainital & Bhimtal circuit plans.',
     primaryKeyword: 'Kainchi Dham itinerary',
-    secondaryKeywords: ['Kainchi Dham 1 day itinerary', 'Kainchi Dham 2 day itinerary', 'Kainchi Dham 3 day itinerary', 'Kainchi Dham weekend trip', 'Kainchi and Nainital trip'],
+    secondaryKeywords: ['Kainchi Dham tour package', 'kainchi dham travel', 'Kainchi Dham 1 day itinerary', 'Kainchi Dham 2 day itinerary', 'Kainchi Dham 3 day itinerary', 'Kainchi and Nainital trip'],
     searchIntent: 'INFORMATIONAL',
-    canonicalUrl: 'https://kainchidhambooking.com/itineraries',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-itinerary',
     ogType: 'article',
     author: 'Itinerary Planning Specialist',
     publishedTime: '2024-03-15',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
-      { name: 'Itineraries', url: '/itineraries' }
+      { name: 'Itineraries', url: '/kainchi-dham-itinerary' }
     ],
     faqs: [
       { question: 'Can Kainchi Dham be covered in a 1-day trip from Kathgodam?', answer: 'Yes! Arrive on the Kathgodam Shatabdi or Ranikhet Express by 6:00 AM, take a 1.25 hr taxi to Kainchi Dham, attend morning aarti and darshan, take prasad, visit Bhowali/Bhimtal, and return for an evening train.' },
@@ -243,8 +246,8 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     ],
     relatedRoutes: [
       { label: 'Custom Itinerary Generator', url: '/tools', description: 'Generate a personalized itinerary tailored to your pace' },
-      { label: 'Reserve Hotel Near Temple', url: '/hotels', description: 'Verified stays for restful mountain nights' },
-      { label: 'Station Cabs & Taxis', url: '/taxi', description: 'Chauffeurs for full-day circuit touring' }
+      { label: 'Reserve Hotel Near Temple', url: '/kainchi-dham-hotels', description: 'Verified stays for restful mountain nights' },
+      { label: 'Station Cabs & Taxis', url: '/kainchi-dham-taxi', description: 'Chauffeurs for full-day circuit touring' }
     ]
   },
 
@@ -260,7 +263,7 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     ogType: 'article',
     author: 'Kumaon Regional Travel Desk',
     publishedTime: '2024-03-20',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
       { name: 'Nearby Destinations', url: '/nearby' }
@@ -271,8 +274,8 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
       { question: 'Can I visit Mukteshwar on the same trip?', answer: 'Yes, Mukteshwar is about 38 km (1.5 hrs drive) from Kainchi Dham and offers spectacular 180-degree Himalayan snow peak views.' }
     ],
     relatedRoutes: [
-      { label: 'Regional Cab Sightseeing', url: '/taxi', description: 'Full-day Kumaon temple and lake circuits' },
-      { label: '3-Day Kumaon Itinerary', url: '/itineraries', description: 'Combine Kainchi, Nainital, and Mukteshwar smoothly' },
+      { label: 'Regional Cab Sightseeing', url: '/kainchi-dham-taxi', description: 'Full-day Kumaon temple and lake circuits' },
+      { label: '3-Day Kumaon Itinerary', url: '/kainchi-dham-itinerary', description: 'Combine Kainchi, Nainital, and Mukteshwar smoothly' },
       { label: 'Travel Distance Calculator', url: '/tools', description: 'Check distances between all Kumaon destinations' }
     ]
   },
@@ -289,7 +292,7 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     ogType: 'website',
     author: 'Travel Technology Lab',
     publishedTime: '2024-04-01',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
       { name: 'Travel Tools', url: '/tools' }
@@ -299,8 +302,8 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
       { question: 'What seasonal clothing should I pack for Kainchi Dham?', answer: 'Summer (March–June) requires light cottons with a light evening layer; Monsoon (July–August) requires rain gear and sturdy grips; Winter (Nov–Feb) requires thermals and heavy woolens as temperatures drop to 2°C–12°C.' }
     ],
     relatedRoutes: [
-      { label: 'Reserve Handpicked Hotel', url: '/hotels', description: 'Find stays matching your calculated budget' },
-      { label: 'Kathgodam Chauffeurs', url: '/taxi', description: 'Fixed-fare station transfers' },
+      { label: 'Reserve Handpicked Hotel', url: '/kainchi-dham-hotels', description: 'Find stays matching your calculated budget' },
+      { label: 'Kathgodam Chauffeurs', url: '/kainchi-dham-taxi', description: 'Fixed-fare station transfers' },
       { label: 'Complete Visit Guide', url: '/kainchi-dham', description: 'Temple timings and visitor rules' }
     ]
   },
@@ -317,7 +320,7 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     ogType: 'website',
     author: 'Founding & Editorial Board',
     publishedTime: '2024-01-01',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
       { name: 'About & Editorial', url: '/about' }
@@ -345,15 +348,23 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     ogType: 'website',
     author: 'Executive Strategy Desk',
     publishedTime: '2024-04-15',
-    modifiedTime: '2026-09-08',
+    modifiedTime: '2026-09-12',
     breadcrumbs: [
       { name: 'Home', url: '/' },
       { name: 'Platform Metrics & Acquisition', url: '/acquire' }
     ],
     relatedRoutes: [
-      { label: 'Explore Stays & Hotels', url: '/hotels', description: 'High-intent commercial revenue cluster' },
-      { label: 'Taxi Bookings', url: '/taxi', description: 'Chauffeur booking conversion funnel' },
+      { label: 'Explore Stays & Hotels', url: '/kainchi-dham-hotels', description: 'High-intent commercial revenue cluster' },
+      { label: 'Taxi Bookings', url: '/kainchi-dham-taxi', description: 'Chauffeur booking conversion funnel' },
       { label: 'Free Travel Tools', url: '/tools', description: 'High-linkable organic acquisition assets' }
     ]
   }
 };
+
+// Map legacy / short aliases so lookup by legacy key works flawlessly
+SEO_ROUTES['/hotels'] = SEO_ROUTES['/kainchi-dham-hotels'];
+SEO_ROUTES['/taxi'] = SEO_ROUTES['/kainchi-dham-taxi'];
+SEO_ROUTES['/travel-guide'] = SEO_ROUTES['/kainchi-dham-how-to-reach'];
+SEO_ROUTES['/itineraries'] = SEO_ROUTES['/kainchi-dham-itinerary'];
+SEO_ROUTES['/from'] = SEO_ROUTES['/kainchi-dham-how-to-reach'];
+

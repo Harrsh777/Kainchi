@@ -37,7 +37,7 @@ export const FromCityPage: React.FC<FromCityPageProps> = ({ slug, onNavigate }) 
             <button
               key={city.slug}
               type="button"
-              onClick={() => onNavigate(`/from/${city.slug}`)}
+              onClick={() => onNavigate(routePathForCity(city.slug))}
               className="text-left p-6 rounded-3xl bg-white border border-forest-900/10 hover:border-gold-500 shadow-sm"
             >
               <p className="text-[11px] uppercase tracking-widest text-gold-700 font-bold">{city.region}</p>

@@ -1,5 +1,13 @@
 import React, { useEffect } from 'react';
 import { DEFAULT_OG_IMAGE } from '../data/siteImages';
+import {
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+  generateTouristAttractionSchema,
+  generateBreadcrumbSchema,
+  generateSpeakableSchema,
+  SITE_URL,
+} from './schemas';
 
 export interface SEOProps {
   title: string;
@@ -24,7 +32,7 @@ export const SEOHead: React.FC<SEOProps> = ({
   ogType = 'website',
   ogImage = DEFAULT_OG_IMAGE,
   publishedTime,
-  modifiedTime = '2026-09-08',
+  modifiedTime = '2026-09-12',
   author = 'Kainchi Dham Editorial Board',
   breadcrumbs,
   schema,
@@ -44,17 +52,23 @@ export const SEOHead: React.FC<SEOProps> = ({
     };
 
     setMeta('name', 'description', description);
-    setMeta('name', 'robots', noindex ? 'noindex, nofollow' : 'index, follow');
+    setMeta('name', 'robots', noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
     setMeta('name', 'twitter:card', 'summary_large_image');
     setMeta('name', 'twitter:title', title);
     setMeta('name', 'twitter:description', description);
-    setMeta('name', 'twitter:image', ogImage);
+    setMeta('name', 'twitter:image', ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`);
+
+    // Geo tags
+    setMeta('name', 'geo.region', 'IN-UT');
+    setMeta('name', 'geo.placename', 'Kainchi Dham, Nainital, Uttarakhand');
+    setMeta('name', 'geo.position', '29.4219;79.5167');
+    setMeta('name', 'ICBM', '29.4219, 79.5167');
 
     if (keywords && keywords.length > 0) {
       setMeta('name', 'keywords', keywords.join(', '));
     }
 
-    // 4. Update Canonical Link
+    // Canonical link
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
     if (!canonical) {
       canonical = document.createElement('link');
@@ -63,14 +77,16 @@ export const SEOHead: React.FC<SEOProps> = ({
     }
     canonical.setAttribute('href', canonicalUrl);
 
-    // 5. OpenGraph Tags
+    // OpenGraph tags
+    const ogFullImage = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`;
     const ogTags = [
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
       { property: 'og:url', content: canonicalUrl },
       { property: 'og:type', content: ogType },
-      { property: 'og:image', content: ogImage },
-      { property: 'og:site_name', content: 'Kainchi Dham Booking' },
+      { property: 'og:image', content: ogFullImage },
+      { property: 'og:site_name', content: 'Kainchi Dham Booking & Travel Guide' },
+      { property: 'og:locale', content: 'en_IN' },
     ];
 
     ogTags.forEach(({ property, content }) => {
@@ -83,54 +99,54 @@ export const SEOHead: React.FC<SEOProps> = ({
       meta.setAttribute('content', content);
     });
 
-    // 6. JSON-LD Structured Data
+    // JSON-LD Structured Data with @graph Knowledge Graph
     const existingScript = document.getElementById('json-ld-structured-data');
     if (existingScript) {
       existingScript.remove();
     }
 
-    const schemasToInject: any[] = [];
-
-    // Base Organization & WebSite Schema
-    schemasToInject.push({
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: 'Kainchi Dham Booking',
-      url: 'https://kainchidhambooking.com',
-      description: 'Independent travel resource and booking platform for Kainchi Dham, Uttarakhand. Not affiliated with Kainchi Dham Ashram.',
-    });
+    const graphEntities: any[] = [
+      generateWebSiteSchema(),
+      generateOrganizationSchema(),
+      generateTouristAttractionSchema(),
+    ];
 
     // BreadcrumbList Schema
     if (breadcrumbs && breadcrumbs.length > 0) {
-      schemasToInject.push({
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: breadcrumbs.map((b, idx) => ({
-          '@type': 'ListItem',
-          position: idx + 1,
-          name: b.name,
-          item: b.url.startsWith('http') ? b.url : `https://kainchidhambooking.com${b.url}`,
-        })),
-      });
+      graphEntities.push(generateBreadcrumbSchema(breadcrumbs));
     }
 
-    // Custom Schema (Article, FAQPage, Hotel, etc.)
+    // Voice search speakable specification
+    graphEntities.push(generateSpeakableSchema(['h1', 'p.lead', '.quick-answer']));
+
+    // Page-specific Custom Schemas
     if (schema) {
       if (Array.isArray(schema)) {
-        schemasToInject.push(...schema);
+        schema.forEach((s) => {
+          if (s) {
+            // strip duplicate @context if wrapped in @graph
+            const { '@context': _ctx, ...rest } = s;
+            graphEntities.push(rest);
+          }
+        });
       } else {
-        schemasToInject.push(schema);
+        const { '@context': _ctx, ...rest } = schema;
+        graphEntities.push(rest);
       }
     }
+
+    const structuredData = {
+      '@context': 'https://schema.org',
+      '@graph': graphEntities,
+    };
 
     const script = document.createElement('script');
     script.id = 'json-ld-structured-data';
     script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(schemasToInject);
+    script.textContent = JSON.stringify(structuredData);
     document.head.appendChild(script);
 
     return () => {
-      // Cleanup on unmount
       const s = document.getElementById('json-ld-structured-data');
       if (s) s.remove();
     };
@@ -138,3 +154,4 @@ export const SEOHead: React.FC<SEOProps> = ({
 
   return null;
 };
+

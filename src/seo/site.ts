@@ -1,5 +1,5 @@
 export const SITE_ORIGIN = 'https://kainchidhambooking.com';
-export const LASTMOD = '2026-09-08';
+export const LASTMOD = '2026-09-12';
 
 export type SitemapBucket = 'pages' | 'routes' | 'hotels' | 'destinations';
 
