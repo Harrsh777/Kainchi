@@ -21,6 +21,14 @@ export type ResolvedRoute =
 const NAMED = new Set([
   '/kainchi-dham',
   '/neem-karoli-baba',
+  '/kainchi-dham-registration',
+  '/kainchi-dham-booking',
+  '/kainchi-dham-darshan',
+  '/kainchi-dham-entry-pass',
+  '/kainchi-dham-parking',
+  '/kainchi-dham-tour-packages',
+  '/kainchi-dham-rules',
+  '/kainchi-dham-weather',
   '/kainchi-dham-hotels',
   '/kainchi-dham-taxi',
   '/kainchi-dham-how-to-reach',
@@ -44,6 +52,13 @@ export function resolveRoute(raw: string): ResolvedRoute {
   if (fromCity) {
     const city = FROM_CITIES.find((c) => c.slug === fromCity[1]);
     if (city) return { kind: 'redirect', to: `/${city.slug}-to-kainchi-dham` };
+    return { kind: 'notfound' };
+  }
+
+  const fromKainchi = path.match(/^\/kainchi-dham-from-([a-z0-9-]+)$/);
+  if (fromKainchi) {
+    const city = FROM_CITIES.find((c) => c.slug === fromKainchi[1]);
+    if (city) return { kind: 'route-city', slug: city.slug };
     return { kind: 'notfound' };
   }
 

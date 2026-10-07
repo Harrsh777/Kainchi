@@ -11,16 +11,38 @@ export const TRAVEL_GUIDE_DATA: GuideArticle[] = [
     image: SITE_IMAGES.templeComplex,
     sections: [
       {
-        heading: 'By Train (Most Recommended)',
-        content: 'Kathgodam Railway Station (KGM) is the nearest railhead, located 37 km from Kainchi Dham. Trains like the New Delhi Kathgodam Shatabdi Express (12040/12039) and Ranikhet Express connect Delhi overnight. From Kathgodam, private cabs reach Kainchi Dham in about 1 hr 15 mins via Bhowali.'
+        heading: 'By Train & Nearest Station (Kathgodam - 37 km)',
+        content: 'Kathgodam Railway Station (KGM) is the nearest railhead, located 37 km from Kainchi Dham. Key trains include the New Delhi Kathgodam Shatabdi Express (12040/12039) departing Delhi at 6:20 AM and the overnight Ranikhet Express (15013). From Kathgodam, private cabs reach Kainchi Dham in about 1 hr 15 mins via Bhowali on NH 109.'
       },
       {
-        heading: 'By Air',
-        content: 'Pantnagar Airport (PGH) is approximately 72 km away. Direct flights operate from Delhi, Dehradun, and Lucknow. Chauffeur cabs take about 2 hours to ascend into the hills.'
+        heading: 'By Air & Nearest Airport (Pantnagar - 70 km / Delhi - 320 km)',
+        content: 'Pantnagar Airport (PGH) is the closest domestic airport, approximately 70 km away (~2 hrs drive). Scheduled direct flights connect Pantnagar with Delhi (DEL) and Dehradun (DED). For broad international and domestic flights, Delhi IGI Airport (320 km, 6.5–7.5 hrs drive) is the primary gateway.'
       },
       {
-        heading: 'By Road from Delhi / NCR',
-        content: 'Distance is ~315 km. Route: Delhi → Hapur Bypass → Moradabad Bypass → Rampur → Bilaspur → Rudrapur → Haldwani → Kathgodam → Bhowali → Kainchi Dham. Travel duration is approximately 6.5 to 7.5 hours via the smooth 4-lane highway up to Haldwani.'
+        heading: 'By Road from Delhi / NCR (320 km)',
+        content: 'Route: Delhi → Hapur Bypass → Moradabad Bypass → Rampur → Bilaspur → Rudrapur → Haldwani → Kathgodam → Bhowali → Kainchi Dham. Travel duration is approximately 6.5 to 7.5 hours via the smooth 4-lane highway up to Haldwani.'
+      }
+    ]
+  },
+  {
+    id: 'kainchi-dham-tickets-and-entry-faq',
+    title: 'Kainchi Dham Tickets & Entry: 100% Free Darshan Guide',
+    category: 'Darshan Guide',
+    readTime: '3 min read',
+    summary: 'Everything you need to know about entry tickets, VIP passes (none exist), timings, free prasad, and darshan etiquette.',
+    image: SITE_IMAGES.riverTemple,
+    sections: [
+      {
+        heading: 'Are Entry Tickets Required?',
+        content: 'No. Entry to Kainchi Dham is 100% FREE for all devotees. There are NO tickets, NO VIP darshan passes, and NO paid tokens. Beware of fraudulent agents claiming to sell VIP passes online.'
+      },
+      {
+        heading: 'Daily Aarti & Darshan Schedule',
+        content: 'Temple gates open at 6:30 AM and close after evening Aarti at 7:30 PM. Morning Aarti is performed around 7:00 AM, followed by Hanuman Chalisa chanting, and Evening Aarti takes place around 6:30 PM.'
+      },
+      {
+        heading: 'Free Bhandara & Sacred Prasad',
+        content: 'Sacred Bhandara prasad (warm khichdi / poori-sabzi / malpua / tea) is lovingly served to every visiting devotee free of charge as part of Maharaj-ji\'s tradition: "Feed Everyone".'
       }
     ]
   },
@@ -47,32 +69,6 @@ export const TRAVEL_GUIDE_DATA: GuideArticle[] = [
     ]
   },
   {
-    id: 'temple-etiquette-guidelines',
-    title: 'Temple Rules, Aarti Timings & Etiquette',
-    category: 'Darshan Guide',
-    readTime: '3 min read',
-    summary: 'Essential visitor guidelines, photography rules, dress code, and prayer timings at Kainchi Dham Ashram.',
-    image: SITE_IMAGES.riverTemple,
-    sections: [
-      {
-        heading: 'Daily Timings',
-        content: 'Temple Gates open at 6:30 AM and close around 7:30 PM. Morning Aarti is performed around 7:00 AM, and the evening Aarti takes place around 6:30 PM (timings shift slightly with seasons).'
-      },
-      {
-        heading: 'Photography & Electronic Devices',
-        content: 'Photography and videography inside the inner sanctum and Maharaj-ji’s original kutir are strictly prohibited to preserve the sanctity and solemnity of prayer.'
-      },
-      {
-        heading: 'Attire & Footwear',
-        content: 'Modest, respectful clothing is requested. Dedicated shoe deposit counters are available outside the main ashram bridge.'
-      },
-      {
-        heading: 'Prasad & Offerings',
-        content: 'Fresh flowers and simple pure offerings can be made. Free Bhandara prasad (khichdi / poori-chana / tea) is distributed with great love to all visiting devotees.'
-      }
-    ]
-  },
-  {
     id: 'where-to-stay-kainchi',
     title: 'Where to Stay: Kainchi Valley vs Bhowali vs Nainital',
     category: 'Accommodation',
@@ -81,15 +77,15 @@ export const TRAVEL_GUIDE_DATA: GuideArticle[] = [
     image: SITE_IMAGES.courtyardAerial,
     sections: [
       {
-        heading: 'Near Ashram (Kainchi / Niglat)',
+        heading: 'Near Ashram (Kainchi / Niglat - 0.5 to 2 km)',
         content: 'Best for devotees wishing to attend both morning and evening Aarti on foot without dealing with traffic or parking. Stays here are peaceful, serene, and immerse you in the valley’s spiritual ambience.'
       },
       {
-        heading: 'Bhowali Town (10–15 mins drive)',
+        heading: 'Bhowali Town (8 km / 15 mins drive)',
         content: 'The major junction town known as the fruit market of Kumaon. Offers a wider range of boutique hotels, wellness resorts, banks, pharmacies, and multi-cuisine vegetarian restaurants.'
       },
       {
-        heading: 'Nainital / Bhimtal (30–45 mins drive)',
+        heading: 'Nainital / Bhimtal (18–20 km / 45 mins drive)',
         content: 'Ideal for families who wish to combine spiritual darshan with lakeside leisure, boating, luxury resorts, and high-end dining options.'
       }
     ]

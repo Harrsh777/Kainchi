@@ -20,8 +20,17 @@ import { PhotoGallery } from '../components/PhotoGallery';
 import { FAQSection } from '../components/FAQSection';
 import { ConciergeContact } from '../components/ConciergeContact';
 import { DomainForSale } from '../components/DomainForSale';
+import { LandingMapSection } from '../components/LandingMapSection';
+import { NearbyPlacesSection } from '../components/NearbyPlacesSection';
 import { KainchiDhamPillarPage } from './KainchiDhamPillarPage';
 import { NeemKaroliBabaPillarPage } from './NeemKaroliBabaPillarPage';
+import { RegistrationPage } from './RegistrationPage';
+import { BookingPillarPage } from './BookingPillarPage';
+import { DarshanGuidePage } from './DarshanGuidePage';
+import { ParkingGuidePage } from './ParkingGuidePage';
+import { TourPackagesPage } from './TourPackagesPage';
+import { TempleRulesPage } from './TempleRulesPage';
+import { WeatherGuidePage } from './WeatherGuidePage';
 import { HotelsHubPage } from './HotelsHubPage';
 import { TaxiHubPage } from './TaxiHubPage';
 import { TravelGuideHubPage } from './TravelGuideHubPage';
@@ -92,13 +101,21 @@ export const PublicView: React.FC<PublicViewProps> = (p) => {
         <KainchiStory onExploreExperience={() => p.navigateTo('/kainchi-dham')} />
         <NeemKaroliBaba onReadStories={() => p.navigateTo('/stories')} />
         <TravelGuide />
-        <VisitInfo onOpenPlanner={() => p.navigateTo('/kainchi-dham-how-to-reach')} />
+        <VisitInfo onOpenPlanner={() => p.navigateTo('/kainchi-dham-how-to-reach')} onNavigateToMap={() => p.scrollToSection('kainchi-map')} />
         <PhotoGallery onOpenLightbox={p.onOpenLightbox} />
         <Experiences onPlanExperience={p.onPlanExperience} />
+        <NearbyPlacesSection
+          onPlanTrip={() => p.scrollToSection('plan-your-trip')}
+          onNavigateToNearby={() => p.navigateTo('/nearby')}
+        />
         <FloatingSearch onSearch={p.onSearch} onOpenMobilePlanner={() => p.scrollToSection('plan-your-trip')} />
         <FeaturedStays onSelectStay={p.onSelectStay} onPlanTrip={() => p.scrollToSection('plan-your-trip')} />
         <StayCategories onSelectCategory={p.onSelectCategory} />
         <Transportation onBookTransport={p.onBookTransport} />
+        <LandingMapSection
+          onSelectStay={p.onSelectStay}
+          onBookTaxi={() => p.scrollToSection('transportation')}
+        />
         <TripPlanner
           onPlanSubmitted={() => {
             p.addToast('Custom itinerary submitted', 'Our Kumaon desk will contact you on WhatsApp within 2 hours.', 'success');
@@ -133,6 +150,34 @@ export const PublicView: React.FC<PublicViewProps> = (p) => {
         );
       case '/neem-karoli-baba':
         return <NeemKaroliBabaPillarPage onNavigate={p.navigateTo} />;
+      case '/kainchi-dham-registration':
+        return <RegistrationPage onNavigate={p.navigateTo} onOpenPlanner={() => p.navigateTo('/trip-planner')} />;
+      case '/kainchi-dham-booking':
+        return (
+          <BookingPillarPage
+            onNavigate={p.navigateTo}
+            onSelectStay={p.onSelectStay}
+            onBookTransport={p.onBookTransport}
+            onOpenPlanner={() => p.navigateTo('/trip-planner')}
+          />
+        );
+      case '/kainchi-dham-darshan':
+      case '/kainchi-dham-entry-pass':
+        return <DarshanGuidePage onNavigate={p.navigateTo} onOpenPlanner={() => p.navigateTo('/trip-planner')} />;
+      case '/kainchi-dham-parking':
+        return <ParkingGuidePage onNavigate={p.navigateTo} onOpenPlanner={() => p.navigateTo('/trip-planner')} />;
+      case '/kainchi-dham-tour-packages':
+        return (
+          <TourPackagesPage
+            onNavigate={p.navigateTo}
+            onSelectPackage={p.onSelectPackage}
+            onOpenPlanner={() => p.navigateTo('/trip-planner')}
+          />
+        );
+      case '/kainchi-dham-rules':
+        return <TempleRulesPage onNavigate={p.navigateTo} onOpenPlanner={() => p.navigateTo('/trip-planner')} />;
+      case '/kainchi-dham-weather':
+        return <WeatherGuidePage onNavigate={p.navigateTo} onOpenPlanner={() => p.navigateTo('/trip-planner')} />;
       case '/kainchi-dham-hotels':
         return <HotelsHubPage onNavigate={p.navigateTo} onSelectStay={p.onSelectStay} />;
       case '/kainchi-dham-taxi':

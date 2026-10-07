@@ -43,16 +43,6 @@ export const generateOrganizationSchema = () => ({
       closes: '22:00',
     },
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '1840',
-    bestRating: '5',
-    worstRating: '1',
-  },
-  sameAs: [
-    'https://www.wikidata.org/wiki/Q6348348',
-  ],
 });
 
 export const generateWebSiteSchema = () => ({
@@ -82,6 +72,10 @@ export const generateTouristAttractionSchema = () => ({
   description: 'Sacred Himalayan ashram founded in 1964 by the saint Neem Karoli Baba (Maharaj-ji), located in the Kumaon hills on Bhowali-Almora Road in Uttarakhand.',
   url: `${SITE_URL}/kainchi-dham`,
   image: `${SITE_URL}/images/kainchi-dham-vaishno-devi-shikhara.webp`,
+  sameAs: [
+    'https://www.wikidata.org/wiki/Q6348348',
+    'https://en.wikipedia.org/wiki/Kainchi_Dham',
+  ],
   geo: {
     '@type': 'GeoCoordinates',
     latitude: '29.4219',
@@ -180,11 +174,11 @@ export const generateHotelSchema = (hotel: {
   priceRange: hotel.priceRange,
   image: hotel.image,
   url: hotel.url.startsWith('http') ? hotel.url : `${SITE_URL}${hotel.url.startsWith('/') ? '' : '/'}${hotel.url}`,
-  ...(hotel.rating && {
+  ...(hotel.rating && hotel.reviewCount && {
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: hotel.rating,
-      reviewCount: hotel.reviewCount || 48,
+      reviewCount: hotel.reviewCount,
       bestRating: 5,
       worstRating: 1,
     },

@@ -52,23 +52,28 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h4 className="text-gold-400 font-bold uppercase tracking-wider text-xs mb-4">Kainchi Dham</h4>
             <ul className="space-y-2.5 text-xs text-white/80">
               <li>
-                <a href="/today" onClick={(e) => handleLinkClick(e, '/today')} className="hover:text-gold-300 transition-colors">
-                  Kainchi Dham Today
+                <a href="/kainchi-dham-registration" onClick={(e) => handleLinkClick(e, '/kainchi-dham-registration')} className="hover:text-gold-300 transition-colors font-semibold text-gold-200">
+                  Registration 2026 Guide
                 </a>
               </li>
               <li>
-                <a href="/map" onClick={(e) => handleLinkClick(e, '/map')} className="hover:text-gold-300 transition-colors">
-                  Interactive Travel Map
+                <a href="/kainchi-dham-darshan" onClick={(e) => handleLinkClick(e, '/kainchi-dham-darshan')} className="hover:text-gold-300 transition-colors">
+                  Daily Darshan & Aarti
                 </a>
               </li>
               <li>
-                <a href="/kainchi-dham-how-to-reach" onClick={(e) => handleLinkClick(e, '/kainchi-dham-how-to-reach')} className="hover:text-gold-300 transition-colors">
-                  From Delhi, Mumbai & more
+                <a href="/kainchi-dham-rules" onClick={(e) => handleLinkClick(e, '/kainchi-dham-rules')} className="hover:text-gold-300 transition-colors">
+                  Temple Rules & Dress Code
                 </a>
               </li>
               <li>
-                <a href="/trip-planner" onClick={(e) => handleLinkClick(e, '/trip-planner')} className="hover:text-gold-300 transition-colors">
-                  Free Trip Planner
+                <a href="/kainchi-dham-parking" onClick={(e) => handleLinkClick(e, '/kainchi-dham-parking')} className="hover:text-gold-300 transition-colors">
+                  Parking & Shuttle Lots
+                </a>
+              </li>
+              <li>
+                <a href="/kainchi-dham-weather" onClick={(e) => handleLinkClick(e, '/kainchi-dham-weather')} className="hover:text-gold-300 transition-colors">
+                  Weather & Season Guide
                 </a>
               </li>
               <li>
@@ -94,18 +99,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </a>
               </li>
               <li>
-                <a href="/neem-karoli-baba" onClick={(e) => handleLinkClick(e, '/neem-karoli-baba')} className="hover:text-gold-300 transition-colors">
-                  Books: Miracle of Love
+                <a href="/stories" onClick={(e) => handleLinkClick(e, '/stories')} className="hover:text-gold-300 transition-colors">
+                  Steve Jobs & Ram Dass Legacy
                 </a>
               </li>
               <li>
-                <a href="/stories" onClick={(e) => handleLinkClick(e, '/stories')} className="hover:text-gold-300 transition-colors">
-                  Steve Jobs at Kainchi (1974)
-                </a>
-              </li>
-              <li>
-                <a href="/stories" onClick={(e) => handleLinkClick(e, '/stories')} className="hover:text-gold-300 transition-colors">
-                  Ram Dass & Western Seekers
+                <a href="/today" onClick={(e) => handleLinkClick(e, '/today')} className="hover:text-gold-300 transition-colors">
+                  Kainchi Dham Today
                 </a>
               </li>
             </ul>
@@ -116,13 +116,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h4 className="text-gold-400 font-bold uppercase tracking-wider text-xs mb-4">Book Stays & Cabs</h4>
             <ul className="space-y-2.5 text-xs text-white/80">
               <li>
-                <a href="/kainchi-dham-hotels" onClick={(e) => handleLinkClick(e, '/kainchi-dham-hotels')} className="hover:text-gold-300 transition-colors">
-                  Kainchi Dham Hotel Booking
+                <a href="/kainchi-dham-booking" onClick={(e) => handleLinkClick(e, '/kainchi-dham-booking')} className="hover:text-gold-300 transition-colors font-semibold text-gold-200">
+                  Kainchi Dham Booking 2026
                 </a>
               </li>
               <li>
                 <a href="/kainchi-dham-hotels" onClick={(e) => handleLinkClick(e, '/kainchi-dham-hotels')} className="hover:text-gold-300 transition-colors">
-                  Authentic Kumaoni Homestays
+                  Hotels Near Temple Gate
                 </a>
               </li>
               <li>
@@ -136,40 +136,40 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </a>
               </li>
               <li>
-                <a href="/kainchi-dham-taxi" onClick={(e) => handleLinkClick(e, '/kainchi-dham-taxi')} className="hover:text-gold-300 transition-colors">
-                  Delhi to Kainchi Private Cab
+                <a href="/kainchi-dham-tour-packages" onClick={(e) => handleLinkClick(e, '/kainchi-dham-tour-packages')} className="hover:text-gold-300 transition-colors">
+                  Custom Tour Packages
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Guides & Itineraries */}
+          {/* Column 4: Guides & Routes */}
           <div>
             <h4 className="text-gold-400 font-bold uppercase tracking-wider text-xs mb-4">Guides & Circuits</h4>
             <ul className="space-y-2.5 text-xs text-white/80">
               <li>
                 <a href="/kainchi-dham-how-to-reach" onClick={(e) => handleLinkClick(e, '/kainchi-dham-how-to-reach')} className="hover:text-gold-300 transition-colors">
-                  How to Reach Kainchi Dham
+                  How to Reach Guide
+                </a>
+              </li>
+              <li>
+                <a href="/delhi-to-kainchi-dham" onClick={(e) => handleLinkClick(e, '/delhi-to-kainchi-dham')} className="hover:text-gold-300 transition-colors">
+                  Delhi to Kainchi Dham
+                </a>
+              </li>
+              <li>
+                <a href="/mumbai-to-kainchi-dham" onClick={(e) => handleLinkClick(e, '/mumbai-to-kainchi-dham')} className="hover:text-gold-300 transition-colors">
+                  Mumbai to Kainchi Dham
+                </a>
+              </li>
+              <li>
+                <a href="/nearby" onClick={(e) => handleLinkClick(e, '/nearby')} className="hover:text-gold-300 transition-colors">
+                  Nearby Places & Nainital
                 </a>
               </li>
               <li>
                 <a href="/kainchi-dham-itinerary" onClick={(e) => handleLinkClick(e, '/kainchi-dham-itinerary')} className="hover:text-gold-300 transition-colors">
-                  1-Day & 2-Day Tour Itineraries
-                </a>
-              </li>
-              <li>
-                <a href="/nearby" onClick={(e) => handleLinkClick(e, '/nearby')} className="hover:text-gold-300 transition-colors">
-                  Nainital & Bhimtal Sights
-                </a>
-              </li>
-              <li>
-                <a href="/nearby" onClick={(e) => handleLinkClick(e, '/nearby')} className="hover:text-gold-300 transition-colors">
-                  Golu Devta Temple Ghorakhal
-                </a>
-              </li>
-              <li>
-                <a href="/nearby" onClick={(e) => handleLinkClick(e, '/nearby')} className="hover:text-gold-300 transition-colors">
-                  Mukteshwar Himalayan Views
+                  1-Day & 2-Day Itineraries
                 </a>
               </li>
             </ul>

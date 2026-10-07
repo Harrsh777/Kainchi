@@ -26,12 +26,12 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath = '/', onNavigate, o
   }, []);
 
   const navLinks = [
-    { name: 'Kainchi Dham', url: '/kainchi-dham', anchor: '#visit-info' },
-    { name: 'Today', url: '/today' },
-    { name: 'Map', url: '/map' },
-    { name: 'Hotels & Stays', url: '/kainchi-dham-hotels', anchor: '#stays' },
-    { name: 'Cars & Cabs', url: '/kainchi-dham-taxi', anchor: '#transportation' },
-    { name: 'Routes', url: '/kainchi-dham-how-to-reach' },
+    { name: 'Registration 2026', url: '/kainchi-dham-registration' },
+    { name: 'Booking', url: '/kainchi-dham-booking' },
+    { name: 'Darshan', url: '/kainchi-dham-darshan' },
+    { name: 'Hotels', url: '/kainchi-dham-hotels' },
+    { name: 'Taxi', url: '/kainchi-dham-taxi' },
+    { name: 'How to Reach', url: '/kainchi-dham-how-to-reach' },
   ];
 
   const handleLinkClick = (e: React.MouseEvent, link: typeof navLinks[0]) => {

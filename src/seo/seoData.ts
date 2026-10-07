@@ -25,7 +25,24 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     title: 'Kainchi Dham Booking & Travel Guide 2026 — Ashram Timings, Stays & Taxis',
     description: 'Complete independent guide for Kainchi Dham (Neem Karoli Baba Ashram near Nainital). Book verified hotels near temple, Kathgodam & Delhi taxi transfers, check daily darshan timings & Kumaon travel plans.',
     primaryKeyword: 'Kainchi Dham booking',
-    secondaryKeywords: ['Kainchi Dham', 'kainchi dhaam booking', 'kainchi dham travel', 'Kainchi Dham taxi booking', 'Kainchi Dham hotel booking', 'Neem Karoli Baba ashram', 'Kainchi Dham timings'],
+    secondaryKeywords: [
+      'kainchi dham nearest airport',
+      'kathgodam to kainchi dham distance',
+      'nearest airport to kainchi dham',
+      'how to reach kainchi dham by train',
+      'train to kainchi dham',
+      'kainchi dham map',
+      'nearest railway station to kainchi dham',
+      'kainchi dham tickets',
+      'kainchi dham near places',
+      'kaichi dham map',
+      'Kainchi Dham',
+      'kainchi dhaam booking',
+      'kainchi dham travel',
+      'Kainchi Dham taxi booking',
+      'Kainchi Dham hotel booking',
+      'Neem Karoli Baba ashram'
+    ],
     searchIntent: 'INFORMATIONAL',
     canonicalUrl: 'https://kainchidhambooking.com/',
     ogType: 'website',
@@ -34,10 +51,30 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
     modifiedTime: '2026-09-12',
     breadcrumbs: [{ name: 'Home', url: '/' }],
     faqs: [
-      { question: 'What is Kainchi Dham and why is it famous?', answer: 'Kainchi Dham is a sacred Himalayan ashram founded in 1964 by the saint Neem Karoli Baba (Maharaj-ji), located in the Kumaon hills of Uttarakhand near Nainital and Bhowali.' },
-      { question: 'How can I book taxi and hotels for Kainchi Dham?', answer: 'Through KainchiDhamBooking.com, you can reserve verified boutique hotels and homestays near the temple gate, and book fixed-price taxi pickups from Kathgodam Railway Station, Pantnagar Airport, and Delhi NCR.' },
-      { question: 'What are the daily temple visiting timings at Kainchi Dham?', answer: 'The ashram gates open around 6:30 AM for Morning Aarti and close after Evening Aarti around 7:30 PM daily. Temple darshan and prasad are completely free.' },
-      { question: 'Can visitors stay inside the Kainchi Dham Ashram?', answer: 'Ashram accommodation requires prior written permission from the ashram trust. Most pilgrims stay in verified boutique hotels, guest lodges, and homestays in Kainchi Valley, Bhowali, or Bhimtal.' }
+      {
+        question: 'What is the nearest airport to Kainchi Dham?',
+        answer: 'Pantnagar Airport (PGH) is the nearest airport, located approximately 70 km away (~2 to 2.5 hours drive). Indira Gandhi International Airport in New Delhi (DEL) is the primary major airport at 320 km (~6.5 to 7.5 hours drive).'
+      },
+      {
+        question: 'What is the distance from Kathgodam to Kainchi Dham?',
+        answer: 'The distance from Kathgodam Railway Station to Kainchi Dham is 37 km (about 1 hour 15 minutes drive via NH 109 through Jeolikot and Bhowali).'
+      },
+      {
+        question: 'Which is the nearest railway station to Kainchi Dham and what trains run there?',
+        answer: 'Kathgodam Railway Station (KGM) is the nearest railway station, located 37 km away. Key trains include the New Delhi-Kathgodam Shatabdi Express (12040), Ranikhet Express (15013), and Uttar Sampark Kranti (15035).'
+      },
+      {
+        question: 'Are there tickets or entry fees for Kainchi Dham (Kainchi Dham Tickets)?',
+        answer: 'Entry to Kainchi Dham is 100% FREE. There are NO tickets, NO VIP passes, and NO tokens required for temple entry or darshan. Free sacred prasad/bhandara is served to all.'
+      },
+      {
+        question: 'Where is Kainchi Dham on the map?',
+        answer: 'Kainchi Dham is located on NH 109 (Bhowali-Almora Highway), 8 km from Bhowali and 18 km from Nainital in Uttarakhand (GPS: 29.4219° N, 79.5167° E).'
+      },
+      {
+        question: 'What are the top nearby places to visit around Kainchi Dham?',
+        answer: 'Top nearby places include Bhowali (8 km), Golu Devta Temple at Ghorakhal (14 km), Nainital & Naini Lake (18 km), Bhimtal (20 km), Sattal (24 km), and Mukteshwar (38 km).'
+      }
     ],
     relatedRoutes: [
       { label: 'Kainchi Dham Complete Guide', url: '/kainchi-dham', description: 'Map, trains, hotels, weather, FAQ' },
@@ -358,13 +395,317 @@ export const SEO_ROUTES: Record<string, SEORouteMeta> = {
       { label: 'Taxi Bookings', url: '/kainchi-dham-taxi', description: 'Chauffeur booking conversion funnel' },
       { label: 'Free Travel Tools', url: '/tools', description: 'High-linkable organic acquisition assets' }
     ]
+  },
+
+  // 13. Registration Hub (Phase 9 Primary Focus)
+  '/kainchi-dham-registration': {
+    path: '/kainchi-dham-registration',
+    title: 'Kainchi Dham Registration 2026: Online Booking & Visitor Guide',
+    description: 'Learn about Kainchi Dham registration, visitor rules, booking updates, timings and how to plan your visit in 2026. 100% free entry guidelines.',
+    primaryKeyword: 'Kainchi Dham Registration',
+    secondaryKeywords: [
+      'Kainchi Dham online registration',
+      'Kainchi Dham registration 2026',
+      'Kainchi Dham booking',
+      'Kainchi Dham entry pass',
+      'Kainchi Dham visitor registration',
+      'Kainchi Dham registration process'
+    ],
+    searchIntent: 'INFORMATIONAL',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-registration',
+    ogType: 'article',
+    author: 'Kainchi Dham Editorial & Legal Desk',
+    publishedTime: '2024-03-01',
+    modifiedTime: '2026-10-01',
+    breadcrumbs: [
+      { name: 'Home', url: '/' },
+      { name: 'Registration 2026', url: '/kainchi-dham-registration' }
+    ],
+    faqs: [
+      {
+        question: 'Is Kainchi Dham registration required in 2026?',
+        answer: 'The Nainital district administration has planned a Char Dham-style visitor registration system to manage heavy weekend crowds. Gate entry is currently active and completely free for all devotees.'
+      },
+      {
+        question: 'How much is the registration fee for Kainchi Dham?',
+        answer: 'Registration and temple darshan are 100% FREE. There are no fees or VIP tokens.'
+      },
+      {
+        question: 'What information is needed to register?',
+        answer: 'Basic details: Government Photo ID (Aadhaar/Voter ID), mobile phone number for OTP confirmation, planned date of visit, and group size.'
+      }
+    ],
+    relatedRoutes: [
+      { label: 'Hotel Booking', url: '/kainchi-dham-hotels', description: 'Verified stays near temple gate' },
+      { label: 'Kathgodam Taxi', url: '/kainchi-dham-taxi', description: 'Fixed-fare station transfers' },
+      { label: 'Temple Timings', url: '/kainchi-dham-timings', description: 'Daily Aarti and gate hours' }
+    ]
+  },
+
+  // 14. Booking Hub
+  '/kainchi-dham-booking': {
+    path: '/kainchi-dham-booking',
+    title: 'Kainchi Dham Booking 2026: Hotels, Taxis & Pilgrimage Packages',
+    description: 'Book verified hotels near Kainchi Dham Temple, Kathgodam station taxi pickups, and custom Kumaon pilgrimage itineraries with upfront pricing.',
+    primaryKeyword: 'Kainchi Dham booking',
+    secondaryKeywords: [
+      'Kainchi Dham booking 2026',
+      'Kainchi Dham hotel booking',
+      'Kainchi Dham taxi booking',
+      'kainchi dhaam booking',
+      'Kainchi Dham room booking'
+    ],
+    searchIntent: 'TRANSACTIONAL',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-booking',
+    ogType: 'website',
+    author: 'Hospitality & Concierge Operations Desk',
+    publishedTime: '2024-02-15',
+    modifiedTime: '2026-10-01',
+    breadcrumbs: [
+      { name: 'Home', url: '/' },
+      { name: 'Booking 2026', url: '/kainchi-dham-booking' }
+    ],
+    faqs: [
+      {
+        question: 'What can I book on KainchiDhamBooking.com?',
+        answer: 'You can reserve verified boutique hotels near the temple gate, book Kathgodam/Delhi taxi transfers, and request customized Kumaon tour itineraries.'
+      },
+      {
+        question: 'Is temple darshan paid?',
+        answer: 'No. Temple entry is 100% FREE. Bookings on this platform are strictly for private hotel lodging and commercial taxi transport.'
+      }
+    ],
+    relatedRoutes: [
+      { label: 'Explore Stays', url: '/kainchi-dham-hotels', description: 'Walkable valley stays' },
+      { label: 'Kathgodam Taxi', url: '/kainchi-dham-taxi', description: 'Station pickups from ₹1,499' },
+      { label: 'Trip Planner', url: '/trip-planner', description: 'Personalized quote generator' }
+    ]
+  },
+
+  // 15. Darshan Guide Hub
+  '/kainchi-dham-darshan': {
+    path: '/kainchi-dham-darshan',
+    title: 'Kainchi Dham Darshan 2026: Aarti Timings, Free Entry & Temple Rules',
+    description: 'Complete guide to Kainchi Dham Darshan: Morning & Evening Aarti hours, 100% free entry policy, sacred prasad, and meditation room etiquette.',
+    primaryKeyword: 'Kainchi Dham Darshan',
+    secondaryKeywords: [
+      'Kainchi Dham aarti timings',
+      'Kainchi Dham darshan timings',
+      'Kainchi Dham free entry',
+      'Neem Karoli Baba darshan'
+    ],
+    searchIntent: 'INFORMATIONAL',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-darshan',
+    ogType: 'article',
+    author: 'Spiritual Heritage Research Desk',
+    publishedTime: '2024-02-15',
+    modifiedTime: '2026-10-01',
+    breadcrumbs: [
+      { name: 'Home', url: '/' },
+      { name: 'Darshan Guide', url: '/kainchi-dham-darshan' }
+    ],
+    faqs: [
+      {
+        question: 'What are the daily darshan timings at Kainchi Dham?',
+        answer: 'Gates open daily at 6:30 AM and close around 7:30 PM. Morning Aarti is around 7:00 AM and Evening Aarti is around 6:30 PM.'
+      },
+      {
+        question: 'Is there a VIP Darshan ticket?',
+        answer: 'No. There is no VIP Darshan at Kainchi Dham. All devotees stand in the same respectful line.'
+      }
+    ],
+    relatedRoutes: [
+      { label: 'Visitor Registration', url: '/kainchi-dham-registration', description: '2026 visitor advisory' },
+      { label: 'Temple Rules', url: '/kainchi-dham-rules', description: 'Dress code & photography rules' }
+    ]
+  },
+
+  // 16. Entry Pass Hub
+  '/kainchi-dham-entry-pass': {
+    path: '/kainchi-dham-entry-pass',
+    title: 'Kainchi Dham Entry Pass 2026: Online Passes, Free Darshan & Rules',
+    description: 'Factual clarity on Kainchi Dham entry passes, Char Dham style registration updates, free darshan policy, and avoiding VIP pass scams.',
+    primaryKeyword: 'Kainchi Dham entry pass',
+    secondaryKeywords: [
+      'Kainchi Dham tickets',
+      'Kainchi Dham entry ticket',
+      'Kainchi Dham pass booking',
+      'Kainchi Dham VIP pass'
+    ],
+    searchIntent: 'INFORMATIONAL',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-entry-pass',
+    ogType: 'article',
+    author: 'Legal & Travel Verification Team',
+    publishedTime: '2024-03-01',
+    modifiedTime: '2026-10-01',
+    breadcrumbs: [
+      { name: 'Home', url: '/' },
+      { name: 'Entry Pass Guide', url: '/kainchi-dham-entry-pass' }
+    ],
+    faqs: [
+      {
+        question: 'Do I need an entry pass for Kainchi Dham?',
+        answer: 'No paid ticket or entry pass exists. Gate entry is 100% FREE. Any official administrative registration portal will be free of charge.'
+      }
+    ],
+    relatedRoutes: [
+      { label: 'Registration 2026', url: '/kainchi-dham-registration', description: 'Official guidelines' },
+      { label: 'Darshan Timings', url: '/kainchi-dham-darshan', description: 'Aarti and visiting hours' }
+    ]
+  },
+
+  // 17. Parking & Traffic Hub
+  '/kainchi-dham-parking': {
+    path: '/kainchi-dham-parking',
+    title: 'Kainchi Dham Parking Guide 2026: Valley Lots, Shuttles & Traffic Rules',
+    description: 'Learn where to park at Kainchi Dham: Valley municipal parking, Bhowali satellite overflow lots, shuttle taxis, and traffic police rules on NH-109.',
+    primaryKeyword: 'Kainchi Dham parking',
+    secondaryKeywords: [
+      'Kainchi Dham car parking',
+      'Kainchi Dham traffic update',
+      'Bhowali parking shuttle',
+      'Kainchi Dham parking capacity'
+    ],
+    searchIntent: 'INFORMATIONAL',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-parking',
+    ogType: 'article',
+    author: 'Transit Operations Desk',
+    publishedTime: '2024-03-01',
+    modifiedTime: '2026-10-01',
+    breadcrumbs: [
+      { name: 'Home', url: '/' },
+      { name: 'Parking Guide', url: '/kainchi-dham-parking' }
+    ],
+    faqs: [
+      {
+        question: 'Where can I park my car at Kainchi Dham?',
+        answer: 'Valley parking is available for ~150 cars near the gate. On weekends, overflow parking is directed to Bhowali (8 km) with shuttle cabs.'
+      }
+    ],
+    relatedRoutes: [
+      { label: 'Station Taxi', url: '/kainchi-dham-taxi', description: 'Avoid parking hassles with private cabs' },
+      { label: 'How to Reach', url: '/kainchi-dham-how-to-reach', description: 'Complete highway route guide' }
+    ]
+  },
+
+  // 18. Tour Packages Hub
+  '/kainchi-dham-tour-packages': {
+    path: '/kainchi-dham-tour-packages',
+    title: 'Kainchi Dham Tour Packages 2026: 1-Day, 2-Day & 3-Day Itineraries',
+    description: 'Curated Kainchi Dham tour packages with verified hotel stays, Kathgodam station cab pickups, and scenic Nainital-Bhimtal-Mukteshwar circuits.',
+    primaryKeyword: 'Kainchi Dham tour package',
+    secondaryKeywords: [
+      'Kainchi Dham tour packages',
+      'Kainchi Dham 2 day tour',
+      'Kainchi Dham packages from Delhi',
+      'Kainchi Dham pilgrimage package'
+    ],
+    searchIntent: 'COMMERCIAL',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-tour-packages',
+    ogType: 'article',
+    author: 'Itinerary Planning Specialist',
+    publishedTime: '2024-03-01',
+    modifiedTime: '2026-10-01',
+    breadcrumbs: [
+      { name: 'Home', url: '/' },
+      { name: 'Tour Packages 2026', url: '/kainchi-dham-tour-packages' }
+    ],
+    faqs: [
+      {
+        question: 'What is included in a Kainchi Dham tour package?',
+        answer: 'Packages include private AC taxi transfers from Kathgodam/Delhi, boutique hotel stay, pure satvik meals, and regional sightseeing.'
+      }
+    ],
+    relatedRoutes: [
+      { label: 'Free Trip Planner', url: '/trip-planner', description: 'Build your custom itinerary' },
+      { label: 'Hotels Directory', url: '/kainchi-dham-hotels', description: 'Browse partner accommodations' }
+    ]
+  },
+
+  // 19. Temple Rules Hub
+  '/kainchi-dham-rules': {
+    path: '/kainchi-dham-rules',
+    title: 'Kainchi Dham Temple Rules 2026: Dress Code, Photography & Etiquette',
+    description: 'Essential rules and etiquette for visiting Kainchi Dham: Modest dress code, strict photography prohibition in sanctum, footwear counters, and silence.',
+    primaryKeyword: 'Kainchi Dham rules',
+    secondaryKeywords: [
+      'Kainchi Dham dress code',
+      'Kainchi Dham photography rules',
+      'Kainchi Dham guidelines',
+      'Kainchi Dham sanctum code'
+    ],
+    searchIntent: 'INFORMATIONAL',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-rules',
+    ogType: 'article',
+    author: 'Spiritual Heritage Research Desk',
+    publishedTime: '2024-02-15',
+    modifiedTime: '2026-10-01',
+    breadcrumbs: [
+      { name: 'Home', url: '/' },
+      { name: 'Temple Rules', url: '/kainchi-dham-rules' }
+    ],
+    faqs: [
+      {
+        question: 'Is photography permitted inside the sanctum?',
+        answer: 'No. Photography and videography are strictly prohibited in the inner sanctum and Maharaj-ji’s meditation room.'
+      },
+      {
+        question: 'What is the dress code?',
+        answer: 'Modest clothing covering shoulders and knees is required. Traditional Indian attire or respectful travel clothes are recommended.'
+      }
+    ],
+    relatedRoutes: [
+      { label: 'Darshan Guide', url: '/kainchi-dham-darshan', description: 'Aarti times and shrine details' },
+      { label: 'Registration Advisory', url: '/kainchi-dham-registration', description: '2026 visitor advisory' }
+    ]
+  },
+
+  // 20. Weather Hub
+  '/kainchi-dham-weather': {
+    path: '/kainchi-dham-weather',
+    title: 'Kainchi Dham Weather 2026: Month-by-Month Temperature & Best Time',
+    description: 'Complete Kainchi Dham weather guide: monthly temperature averages, summer vs winter climate, monsoon road advisory, and clothing tips.',
+    primaryKeyword: 'Kainchi Dham weather',
+    secondaryKeywords: [
+      'Kainchi Dham temperature',
+      'best time to visit Kainchi Dham',
+      'Kainchi Dham climate',
+      'Kainchi Dham season guide'
+    ],
+    searchIntent: 'INFORMATIONAL',
+    canonicalUrl: 'https://kainchidhambooking.com/kainchi-dham-weather',
+    ogType: 'article',
+    author: 'Kumaon Regional Travel Desk',
+    publishedTime: '2024-03-01',
+    modifiedTime: '2026-10-01',
+    breadcrumbs: [
+      { name: 'Home', url: '/' },
+      { name: 'Weather & Climate', url: '/kainchi-dham-weather' }
+    ],
+    faqs: [
+      {
+        question: 'When is the best weather to visit Kainchi Dham?',
+        answer: 'March to June (pleasant summer) and October to November (crisp, clear autumn with snow peak views).'
+      }
+    ],
+    relatedRoutes: [
+      { label: 'Live Weather & Updates', url: '/today', description: 'Real-time road and weather status' },
+      { label: 'How to Reach', url: '/kainchi-dham-how-to-reach', description: 'Transit guide by season' }
+    ]
   }
 };
 
-// Map legacy / short aliases so lookup by legacy key works flawlessly
+// Map legacy / short aliases and synonym targets so lookups work flawlessly
 SEO_ROUTES['/hotels'] = SEO_ROUTES['/kainchi-dham-hotels'];
+SEO_ROUTES['/hotels-near-kainchi-dham'] = SEO_ROUTES['/kainchi-dham-hotels'];
+SEO_ROUTES['/homestays-near-kainchi-dham'] = SEO_ROUTES['/kainchi-dham-hotels'];
+SEO_ROUTES['/kainchi-dham-accommodation'] = SEO_ROUTES['/kainchi-dham-hotels'];
 SEO_ROUTES['/taxi'] = SEO_ROUTES['/kainchi-dham-taxi'];
 SEO_ROUTES['/travel-guide'] = SEO_ROUTES['/kainchi-dham-how-to-reach'];
 SEO_ROUTES['/itineraries'] = SEO_ROUTES['/kainchi-dham-itinerary'];
 SEO_ROUTES['/from'] = SEO_ROUTES['/kainchi-dham-how-to-reach'];
+SEO_ROUTES['/kainchi-dham-timings'] = SEO_ROUTES['/kainchi-dham-darshan'];
+SEO_ROUTES['/kainchi-dham-visit-guide'] = SEO_ROUTES['/kainchi-dham'];
+SEO_ROUTES['/neem-karoli-baba-kainchi-dham'] = SEO_ROUTES['/neem-karoli-baba'];
+
 
