@@ -11,7 +11,7 @@ type Bucket = 'pages' | 'routes' | 'hotels' | 'destinations';
 type Entry = { path: string; bucket: Bucket; changefreq: string; priority: string };
 
 function sitemapEntries(): Entry[] {
-  const pages: { path: string; priority: string; changefreq: string }[] = [
+  const pages: Entry[] = [
     { path: '/', priority: '1.0', changefreq: 'daily' },
     { path: '/kainchi-dham-registration', priority: '0.95', changefreq: 'daily' },
     { path: '/kainchi-dham-booking', priority: '0.95', changefreq: 'daily' },
