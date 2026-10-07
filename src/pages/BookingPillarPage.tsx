@@ -3,16 +3,11 @@ import {
   Hotel,
   Car,
   Compass,
-  CheckCircle2,
-  Clock,
-  ShieldCheck,
   Star,
   MapPin,
   ArrowRight,
   Info,
-  Calendar,
-  Sparkles,
-  Search
+  Sparkles
 } from 'lucide-react';
 import { SEOHead } from '../seo/SEOHead';
 import { SEO_ROUTES } from '../seo/seoData';
