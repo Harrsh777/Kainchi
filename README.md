@@ -1,6 +1,20 @@
-# React + TypeScript + Vite
+# Kainchi
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React + TypeScript + Vite web app, styled with Tailwind CSS and animated with Framer Motion.
+
+## Getting Started
+
+```bash
+npm install     # install dependencies
+npm run dev     # start the dev server
+npm run build   # type-check and build for production
+npm run lint    # run Oxlint
+npm run preview # preview the production build
+```
+
+## About the Template
+
+This project is built on the Vite React + TypeScript template, which provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:
 
